@@ -1,0 +1,15 @@
+Species,node,category
+Asterias forbesi,ASTFOR,invertebrate
+Asterias rubens,ASTRUB,invertebrate
+Henricia sanguinolenta,HENSAN,invertebrate
+Strongylocentrotus droebachiensis,STRDRO,invertebrate
+Littorina littora,LITLIT,invertebrate
+Littorina obtusata,LITOBT,invertebrate
+Littorina saxatilis,LITSAX,invertebrate
+Nucella lapillus,NUCLAP,invertebrate
+Tectura testudinalis,TECTES,invertebrate
+Mussel spp.,MUSSPP,invertebrate
+Barnacle spp.,BARSPP,invertebrate
+Green Algae,ALGGRE,producer
+Red Algae,ALGRED,producer
+Brown Algae,ALGBRO,producer
