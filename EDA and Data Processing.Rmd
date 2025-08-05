@@ -1,0 +1,280 @@
+---
+title: "DSE6311 - Exploratory Data Analysis"
+author: "Nick Lagoni"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+#Setup
+```{r}
+Sys.setenv(lang='en')
+set.seed(42)
+library(readr)
+library(tidyverse)
+library(dplyr)
+library(purrr)
+library(GGally)
+library(corrplot)
+library(reshape2)
+library(patchwork)
+library(e1071)
+library(gt)
+library(magick)
+library(vegan)
+```
+
+
+# Data Input
+```{r}
+transects<-read.csv("transects.csv")
+echinoderm_counts<-read.csv("echinoderm_counts.csv")
+echinoderm_measurements<-read.csv("echinoderm_measurements.csv")
+motileInvert_counts<-read.csv("motileInvert_counts.csv")
+motileInvert_measurements<-read.csv("motileInvert_measurements.csv")
+photoquadrats<-read.csv("photoquadrats.csv")
+
+```
+
+# Data Preprocessing
+
+### Tidying the Data
+```{r}
+#Photoplots Pivot
+photoquadrats_pivot<-photoquadrats%>%
+  select(Site_Name,Loc_Name,Target_Species,Plot_Name,Start_Date,Spp_Name,Perc_Cover)%>%
+  pivot_wider(
+    names_from = Spp_Name,
+    values_from = Perc_Cover,
+    values_fn = mean
+  )
+#Motile Invert Counts Pivot
+motileInvert_counts$Count<-motileInvert_counts$Damage+motileInvert_counts$No.Damage
+motileInvert_counts_pivot<-motileInvert_counts%>%
+  select(Site_Name,Loc_Name,Target_Species,Plot_Name,Start_Date,Spp_Name,Count)%>%
+  pivot_wider(
+    names_from = Spp_Name,
+    values_from = Count,
+    values_fill = 0
+  )
+motileInvert_counts_pivot<-motileInvert_counts_pivot%>%
+  mutate(across(where(is.numeric), ~ ifelse(. < 0, 0, .)))
+
+#Motile Invert Measurements Pivot
+
+motileInvert_measurements_pivot<-motileInvert_measurements%>%
+  select(Site_Name,Loc_Name,Target_Species,Plot_Name,Start_Date,Spp_Name,Measurement)%>%
+  pivot_wider(
+    names_from = Spp_Name,
+    values_from = Measurement,
+    values_fn = mean,
+    values_fill = 0
+  )
+names(motileInvert_measurements_pivot)[(ncol(motileInvert_measurements_pivot)-5):ncol(motileInvert_measurements_pivot)] <- paste0(names(motileInvert_measurements_pivot)[(ncol(motileInvert_measurements_pivot)-5):ncol(motileInvert_measurements_pivot)], " Mean Measure")
+```
+
+### Joining the Data
+```{r}
+join_cols<-c("Site_Name","Loc_Name","Target_Species","Plot_Name","Start_Date")
+final_data<-photoquadrats_pivot%>%
+  left_join(motileInvert_counts_pivot,by=join_cols)%>%
+  left_join(motileInvert_measurements_pivot,by=join_cols)%>%
+  mutate(across(everything(), ~replace_na(., 0)))
+```
+
+
+#Exploratory Data Analysis
+
+### Collinearity
+```{r}
+corr_matrix <- cor(final_data[sapply(final_data, is.numeric)], use = "complete.obs")
+melted_corr <- melt(corr_matrix)
+
+filtered_corr <- melted_corr %>%
+  filter(Var1 != Var2, abs(value) > 0.5)
+
+ggplot(filtered_corr, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient2(limit = c(-1, 1), midpoint = 0) +
+  theme_minimal(base_size = 10) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(
+    title = "Correlation Heatmap within NETN Rocky Intertidal Photoplots",
+    x = "Variable 1",
+    y = "Variable 2",
+    fill = "Correlation Strength"
+  )
+```
+
+### Target Variable Distribution
+```{r}
+par(mfrow = c(1, 2))
+hist(final_data$`Rockweed (Fucus) spp.`, main = "Fucus spp. Cover", xlab = "Percent Cover")
+hist(final_data$`Knotted Wrack (A. nodosum)`, main = "Ascophyllum nodosum Cover", xlab = "Percent Cover")
+```
+
+### Relationship Between Motile Invert Abundances and Fucus Percent Cover
+
+```{r}
+species_list <- c(
+  "`Common periwinkle (Littorina littorea)`" = "Littorina littorea",
+  "`Smooth periwinkle (Littorina obtusata)`" = "Littorina obtusata",
+  "`Rough periwinkle (Littorina saxatilis)`" = "Littorina saxatilis",
+  "`Green crab (Carcinus maenas)`" = "Carcinus maenas",
+  "`Limpet (Tectura testudinalis)`" = "Tectura testudinalis"
+)
+plots <- lapply(names(species_list), function(sp) {
+  ggplot(final_data, aes_string(x = sp, y = "`Rockweed (Fucus) spp.`")) +
+    geom_point() +
+    geom_smooth(method = "lm") +
+    labs(
+      title = paste(species_list[sp], "vs Fucus spp.")
+    ) +
+    theme_minimal(base_size = 9) +
+    theme(
+      plot.title = element_text(size = 9),
+      axis.title = element_text(size = 8),
+      axis.text = element_text(size = 7)
+    )
+})
+wrap_plots(plots, ncol = 3) +
+  plot_annotation(
+    title = "Relationship between Motile Invertebrate Counts and Fucus Percent Cover",
+    theme = theme(
+      plot.title = element_text(size = 12, face = "bold", hjust = 0.5)
+    )
+  )
+```
+
+### Relationship Between Motile Invert Abundances and Ascophyllum Percent Cover
+```{r}
+species_list <- c(
+  "`Common periwinkle (Littorina littorea)`" = "Littorina littorea",
+  "`Smooth periwinkle (Littorina obtusata)`" = "Littorina obtusata",
+  "`Rough periwinkle (Littorina saxatilis)`" = "Littorina saxatilis",
+  "`Green crab (Carcinus maenas)`" = "Carcinus maenas",
+  "`Limpet (Tectura testudinalis)`" = "Tectura testudinalis"
+)
+plots <- lapply(names(species_list), function(sp) {
+  ggplot(final_data, aes_string(x = sp, y = "`Knotted Wrack (A. nodosum)`")) +
+    geom_point() +
+    geom_smooth(method = "lm") +
+    labs(
+      title = paste(species_list[sp], "vs A. nodosum")
+    ) +
+    theme_minimal(base_size = 9) +
+    theme(
+      plot.title = element_text(size = 9),
+      axis.title = element_text(size = 8),
+      axis.text = element_text(size = 7)
+    )
+})
+wrap_plots(plots, ncol = 3) +
+  plot_annotation(
+    title = "Relationship between Motile Invertebrate Counts and Ascophyllum nodosum Percent Cover",
+    theme = theme(
+      plot.title = element_text(size = 12, face = "bold", hjust = 0.5)
+    )
+  )
+```
+
+### Continuous Variable Summary Table
+```{r}
+
+numeric_data <- final_data %>%
+  select(where(is.numeric))
+
+cont_summary <- numeric_data %>%
+  summarise(across(
+    everything(),
+    list(
+      Mean = ~round(mean(., na.rm = TRUE), 2),
+      Median = ~round(median(., na.rm = TRUE), 2),
+      SD = ~round(sd(., na.rm = TRUE), 2),
+      Min = ~round(min(., na.rm = TRUE), 2),
+      Max = ~round(max(., na.rm = TRUE), 2),
+      Skew = ~round(skewness(., na.rm = TRUE), 2),
+      Kurtosis = ~round(kurtosis(., na.rm = TRUE), 2)
+    ),
+    .names = "{.col}_{.fn}"
+  )) %>%
+  tidyr::pivot_longer(everything(), names_to = c("Variable", ".value"), names_sep = "_")
+
+print(cont_summary)
+
+
+cont_summary %>%
+  gt() %>%
+  gtsave("table_gt.png")
+img <- image_read("table_gt.png")
+img_rotated <- image_rotate(img, 90)
+image_write(img_rotated, "rotated_table_gt.png")
+```
+### Principal Component Analysis
+```{r}
+pca_data <- final_data %>% select(where(is.numeric))
+pca_data <- pca_data[, apply(pca_data, 2, var) != 0]
+pca_data <- na.omit(pca_data)
+pca_result <- prcomp(pca_data, scale. = TRUE, center = TRUE)
+explained_var <- summary(pca_result)$importance[2, ]
+plot(explained_var,type="b",main="PCA Results Scree Plot",ylab="Proportion of Variance Explained",xlab="Principal Component")
+#as.data.frame(explained_var)
+```
+
+# Data Postprocessing
+
+### Square Root Transformation
+```{r}
+data_sqrt <- final_data%>%
+  mutate(across(where(is.numeric), sqrt))
+
+
+par(mfrow = c(1,2))
+hist(data_sqrt$`Rockweed (Fucus) spp.`, main = "Fucus spp. Cover", xlab = "Percent Cover")
+hist(data_sqrt$`Knotted Wrack (A. nodosum)`, main = "Ascophyllum nodosum Cover", xlab = "Percent Cover")
+```
+>Sqrt() transformation does little to nothing to mitigate the zero inflated distribution of the data.
+
+### Log(x+1) Transformation
+```{r}
+data_sqrt<-final_data%>%
+  mutate(across(where(is.numeric),~log(.+1)))
+
+
+par(mfrow=c(1,2))
+hist(data_sqrt$`Rockweed (Fucus) spp.`, main = "Fucus spp. Cover", xlab = "Percent Cover")
+hist(data_sqrt$`Knotted Wrack (A. nodosum)`, main = "Ascophyllum nodosum Cover", xlab = "Percent Cover")
+```
+
+> Log(x+1) transformation does a slightly better job at addressing zero inflation than the Sqrt() transformation, though it does not approach normality at all.
+
+### Presence - Absence Transformation
+```{r}
+
+```
+
+> Transforming the data to presence/absence form data does improve distribution slightly but I believe the cost to the value of the data is too great to justify this course of action, and presence/absence data does not sufficiently address the research question.
+
+### NMDS
+```{r}
+nmds<-metaMDS(numeric_data, distance = "bray", k = 2)
+plot(nmds)
+stressplot(nmds)
+```
+
+### Training Testing Split
+```{r}
+#Using sqrt(p):1 ratio as described in Joseph, 2022. Code adapted from Katherine Geist's Data Science for Biological Sciences course
+calcSplitRatio <- function(p = NA, df) {
+  if(is.na(p)) {
+    p <- ncol(df) -1 
+  }
+  test_N <- (1/sqrt(p))*nrow(df)
+  test_prop <- round((1/sqrt(p))*nrow(df)/nrow(df), 2)
+  train_prop <- 1-test_prop
+  print(paste0("The ideal split ratio is ", train_prop, ":", test_prop, " training:testing"))
+  return(train_prop)
+}
+
+train_prop <- calcSplitRatio(df = data_sqrt)
+```
+
