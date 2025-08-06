@@ -21,6 +21,9 @@ library(e1071)
 library(gt)
 library(magick)
 library(vegan)
+library(rsample)
+library(randomForest)
+library(janitor)
 ```
 
 
@@ -249,7 +252,12 @@ hist(data_sqrt$`Knotted Wrack (A. nodosum)`, main = "Ascophyllum nodosum Cover",
 
 ### Presence - Absence Transformation
 ```{r}
+data_pa<-final_data%>%
+  mutate(across(where(is.numeric),~ifelse(.>0,1,0)))
 
+par(mfrow=c(1,2))
+hist(data_pa$`Rockweed (Fucus) spp.`, main = "Fucus spp. Cover", xlab = "Percent Cover")
+hist(data_pa$`Knotted Wrack (A. nodosum)`, main = "Ascophyllum nodosum Cover", xlab = "Percent Cover")
 ```
 
 > Transforming the data to presence/absence form data does improve distribution slightly but I believe the cost to the value of the data is too great to justify this course of action, and presence/absence data does not sufficiently address the research question.
@@ -260,6 +268,18 @@ nmds<-metaMDS(numeric_data, distance = "bray", k = 2)
 plot(nmds)
 stressplot(nmds)
 ```
+### Hellinger-Transformed PCA
+
+```{r}
+hellinger_data<-decostand(numeric_data,method="hellinger")
+
+pca_result <- prcomp(hellinger_data, scale. = FALSE, center = FALSE)
+explained_var <- summary(pca_result)$importance[2, ]
+plot(explained_var,type="b",main="Hellinger-Transformed PCA Results Scree Plot",ylab="Proportion of Variance Explained",xlab="No. of Principal Components")
+as.data.frame(explained_var)
+```
+
+> Even with the Hellinger transformation, PCA continues to be a suboptimal way of reducing dimensionality in the data.
 
 ### Training Testing Split
 ```{r}
@@ -275,6 +295,52 @@ calcSplitRatio <- function(p = NA, df) {
   return(train_prop)
 }
 
-train_prop <- calcSplitRatio(df = data_sqrt)
+train_prop<-calcSplitRatio(df = final_data)
+
+indices<-initial_split(final_data,prop=train_prop)
+train_data<-training(indices)
+test_data<-testing(indices)
 ```
 
+### Out-of-Bag Random Forest
+```{r}
+clean_data<-final_data%>%
+  clean_names()
+#clean_data<-clean_data[,-c(1:5)]
+zero_data<-clean_data%>%
+  select(where(is.numeric))%>%
+  select(where(~sum(.)==0))
+zero_list<-colnames(zero_data)
+clean_data<-clean_data%>%
+  select(-zero_list)
+oob_asco<-randomForest(knotted_wrack_a_nodosum~.,data=clean_data,ntree=500,importance=TRUE)
+oob_fuc<-randomForest(rockweed_fucus_spp~.,data=clean_data,ntree=500,importance=TRUE)
+
+
+print(oob_asco)
+print(oob_fuc)
+```
+> An OOB random forest is used to get a pulse of model performance without data transformation, since the transformations up until now have not been very helpful. This also does not compromise the validity of the test set, as this uses only the training set, preventing data leakage. Since percent cover data is on a 0 - 100 scale, residual MSE of 46.64 for Ascophyllum and 70.67 for Fucus suggests very poor model performance in predicting, though the model also explains 95%+ of the variance in each model, suggesting that it is fitting well to the training data.
+
+### Out-of-Bag Random Forest using Logit Transformation
+```{r}
+percent_cover_cols<-colnames(clean_data[,c(6:29)])
+clean_data_percent<-clean_data%>%
+  mutate(across(percent_cover_cols,~./100)) #converting to a 0 - 1 scale for logit transformation
+logit_data<-clean_data_percent%>%
+  mutate(across(percent_cover_cols,~qlogis(pmin(pmax(.,0.0001),1-0.0001)))) 
+#have to limit the range from 0.0001 to 0.9999 otherwise it gives me NaNs and -Inf values.
+oob_asco<-randomForest(knotted_wrack_a_nodosum~.,data=logit_data,ntree=500,importance=TRUE)
+oob_fuc<-randomForest(rockweed_fucus_spp~.,data=logit_data,ntree=500,importance=TRUE)
+
+
+print(oob_asco)
+print(oob_fuc)
+
+plot(oob_asco$predicted,logit_data$knotted_wrack_a_nodosum,
+     xlab = "OOB Predicted", ylab = "Actual",
+     main = "OOB Predicted vs Actual")
+  abline(0, 1)
+```
+
+> Trying out Logit transformation as the bounded percent cover values tightly clustered around 0 might be causing issues, even though the non-parametric nature of Random Forest doesn't require unbounded data.
