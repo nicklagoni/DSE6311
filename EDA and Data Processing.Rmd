@@ -13,6 +13,7 @@ library(readr)
 library(tidyverse)
 library(dplyr)
 library(purrr)
+library(ggplot2)
 library(GGally)
 library(corrplot)
 library(reshape2)
@@ -82,6 +83,9 @@ final_data<-photoquadrats_pivot%>%
   left_join(motileInvert_counts_pivot,by=join_cols)%>%
   left_join(motileInvert_measurements_pivot,by=join_cols)%>%
   mutate(across(everything(), ~replace_na(., 0)))
+final_data<-final_data%>%
+  filter(Site_Name=="Acadia NP")%>%
+  select(-Target_Species,-Plot_Name,-Site_Name)
 ```
 
 
@@ -344,3 +348,155 @@ plot(oob_asco$predicted,logit_data$knotted_wrack_a_nodosum,
 ```
 
 > Trying out Logit transformation as the bounded percent cover values tightly clustered around 0 might be causing issues, even though the non-parametric nature of Random Forest doesn't require unbounded data.
+
+```{r}
+# Get predictions from your random forest model
+pred_asc<-predict(oob_asco, newdata = logit_data)
+pred_fuc<-predict(oob_fuc, newdata = logit_data)
+
+# Actual values on logit scale
+actual_asc<-logit_data$knotted_wrack_a_nodosum
+actual_fuc<-logit_data$rockweed_fucus_spp
+
+# Back-transform to proportion scale
+actual_asc_prop<-plogis(actual_asc)
+pred_asc_prop<-plogis(pred_asc)
+
+actual_fuc_prop<-plogis(actual_fuc)
+pred_fuc_prop<-plogis(pred_fuc)
+
+# Calculate proportion errors (absolute)
+asc_error_prop<-abs(pred_asc_prop - actual_asc_prop)
+fuc_error_prop<-abs(pred_fuc_prop - actual_fuc_prop)
+
+# Make a tidy dataframe for plotting
+df_plot<-bind_rows(
+  data.frame(
+    species = "Ascophyllum",
+    actual_cover = actual_asc_prop,
+    error_cover = asc_error_prop
+  ),
+  data.frame(
+    species = "Fucus",
+    actual_cover = actual_fuc_prop,
+    error_cover = fuc_error_prop
+  )
+)
+
+# Plot error vs. actual cover
+ggplot(df_plot, aes(x = actual_cover * 100, y = error_cover * 100, color = species)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(se = FALSE) +
+  labs(
+    x = "Actual % Cover",
+    y = "Absolute Error (% cover)",
+    title = "Prediction Error vs. Actual Cover",
+    subtitle = "Back-transformed from logit space"
+  ) +
+  theme_minimal()
+
+```
+
+
+### Random Forest using Logit Transformation
+```{r}
+train_ind<-as.integer(rownames(training(indices)))
+test_ind<-as.integer(rownames(testing(indices)))
+rf_asco<-randomForest(knotted_wrack_a_nodosum~.,data=logit_data,ntree=500,importance=TRUE,subset=train_ind)
+rf_fuc<-randomForest(rockweed_fucus_spp~.,data=logit_data,ntree=500,importance=TRUE,subset=train_ind)
+
+
+print(rf_asco)
+print(rf_fuc)
+
+pred_asc<-predict(rf_asco, newdata = logit_data[test_ind, ])
+pred_fuc<-predict(rf_fuc, newdata = logit_data[test_ind, ])
+plot(pred_asc, logit_data$knotted_wrack_a_nodosum[test_ind],
+     xlab = "Predicted (test)", ylab = "Actual (test)",
+     main = "Predicted vs Actual (Test Data)")
+abline(0, 1)
+plot(pred_fuc, logit_data$rockweed_fucus_spp[test_ind],
+     xlab = "Predicted (test)", ylab = "Actual (test)",
+     main = "Predicted vs Actual (Test Data)")
+abline(0, 1)
+```
+
+
+```{r}
+# Actual values on logit scale
+actual_asc<-logit_data[test_ind, ]$knotted_wrack_a_nodosum
+actual_fuc<-logit_data[test_ind, ]$rockweed_fucus_spp
+
+# Back-transform to proportion scale
+actual_asc_prop<-plogis(actual_asc)
+pred_asc_prop<-plogis(pred_asc)
+
+actual_fuc_prop<-plogis(actual_fuc)
+pred_fuc_prop<-plogis(pred_fuc)
+
+# Calculate proportion errors (absolute)
+asc_error_prop<-abs(pred_asc_prop - actual_asc_prop)
+fuc_error_prop<-abs(pred_fuc_prop - actual_fuc_prop)
+
+# Make a tidy dataframe for plotting
+df_plot<-bind_rows(
+  data.frame(
+    species = "Ascophyllum",
+    actual_cover = actual_asc_prop,
+    error_cover = asc_error_prop
+  ),
+  data.frame(
+    species = "Fucus",
+    actual_cover = actual_fuc_prop,
+    error_cover = fuc_error_prop
+  )
+)
+
+# Plot error vs. actual cover
+ggplot(df_plot, aes(x = actual_cover * 100, y = error_cover * 100, color = species)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(se = FALSE) +
+  labs(
+    x = "Actual % Cover",
+    y = "Absolute Error (% cover)",
+    title = "Prediction Error vs. Actual Cover",
+    subtitle = "Back-transformed from logit space"
+  ) +
+  theme_minimal()
+```
+
+Importance Metrics from Initial Random Forest
+```{r}
+asco_importance_oob<-as.data.frame(importance(oob_asco))
+asco_importance_oob<-asco_importance_oob%>%
+  arrange(desc(`%IncMSE`))
+head(asco_importance_oob)
+
+asco_importance_rf<-as.data.frame(importance(rf_asco))
+asco_importance_rf<-asco_importance_rf%>%
+  arrange(desc(`%IncMSE`))
+head(asco_importance_rf)
+
+fuc_importance_oob<-as.data.frame(importance(oob_fuc))
+fuc_importance_oob<-fuc_importance_oob%>%
+  arrange(desc(`%IncMSE`))
+head(fuc_importance_oob)
+
+fuc_importance_rf<-as.data.frame(importance(rf_fuc))
+fuc_importance_rf<-fuc_importance_rf%>%
+  arrange(desc(`%IncMSE`))
+head(fuc_importance_rf)
+```
+
+Feature Selection based on Importance metrics
+```{r}
+#Found that site_name and plot_name were contributing significantly, dropped site as it is Acadia/BOHA and I am not interested in BOHA right now. Dropped plot name as it is just A1/A2/A3/etc. There is no actual similarity between A2 plots between sites aside from the fact that they are in the asco target species. Dropped target species as well because obviously target species would predict the community breakdown of those plots--they were chosen explicitly because of that.
+```
+
+
+
+Explore Temporally Lagged Model
+```{r}
+
+```
+

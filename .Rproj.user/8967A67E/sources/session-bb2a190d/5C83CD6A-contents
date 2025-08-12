@@ -1,0 +1,609 @@
+---
+title: "Analysis and Prediction of Attrition Risk in ABC Corporation Customers"
+subtitle: "DSE 6111 Final Report"
+author: "Nick Lagoni"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+fontsize: 12pt
+header-includes:
+- \usepackage{fontspec}
+- \setmainfont{Times New Roman}
+- \setmonofont{Times New Roman}
+---
+
+```{r Data and Libraries, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+Sys.setenv(lang="EN")
+library(knitr)
+library(pandoc)
+library(kableExtra)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(corrplot)
+library(knitr)
+library(leaps)
+library(pROC)
+library(class)
+library(caret)
+library(naivebayes)
+library(randomForest)
+library(pdp)
+customer<-read.csv("customer_data.csv",row.names=1)
+customer<-na.omit(customer)
+```
+# Executive Summary
+
+ABC Corporation would like to identify customers with a high risk of attrition (discontinuing services from ABC Corporation) and to understand what factors most strongly determine a customer's risk of attrition. ABC Corporation is looking for a model which predicts risk of attrition, identifies high-risk customers, and describes which variables most predict customer attrition. Using this information, ABC Corporation management intends to target their advertising and promotional efforts to most efficiently retain customers. To address these two primary objectives, this report proposes a supervised Classification problem: a predictive model which predicts a label variable, in this case defined as whether or not a client attrits. All provided variables are included in the model unless there is compelling reason to omit them (e.g., multicollinearity). This model will produce a prediction of whether or not a client leaves the services of ABC Corporation for each customer, based on the calculated likelihood of that client attriting and will identify which variables most contribute to that likelihood. ABC Corporation has provided a list of information on approximately 10,000 customers, including information on whether or not they have discontinued services from ABC Corporation. This data includes demographic information on each customer as well as how they have interacted with ABC Corporation's services and products so far. These variables are used as predictor variables, in conjunction with the data on whether or not each customer has already left the services of ABC Corporation to train the supervised classification model. Several methodologies are explored in this analysis to determine which is the best fit for this particular question and data set. Necessary data engineering steps to ensure optimal performance for each method are described alongside their associated model. All models will be evaluated by several metrics: the proportion of incorrect classifications when evaluated on the training set; the proportion of correct classifications when evaluated on the testing set; sensitivity, defined as the proportion of customers who will attrit correctly classified by the model; and specificity, defined as the proportion of customers who will not attrit correctly classified by the model. Sensitivity is the most important indicator of model performance, as it directly addresses the first business question proposed by ABC Corporation: the accurate prediction of whether or not a customer will attrit. Specificity is less important, as incorrectly predicting a customer as attriting will only result in them receiving more promotional offers and outreach effort from ABC Corporation, which is unlikely to cost ABC Corporation as much as failure to save a customer who intends to leave their services. The optimal model for accurately predicting customer attrition is a Random Forest model, which has an overall accuracy of 96.3% and a sensitivity of 98%. This Random Forest model is easily interpretable, analyzes all of the customer predictor variables, and produces an ordered list of which predictors are most important in predicting customer attrition. This Random Forest model describes total transaction count, total transaction amount, total revolving balance, the change in total count from quarter four to quarter one, and the total number of products utilized as the most important customer attributes, in order, that contribute to whether or not a customer will leave from the services of ABC Corporation. Holding all other variables equal, an increase in each of these attributes is associated with a decrease in risk of customer attrition, although the exact pattern varies and is explored in detail in the body of this report. Other models have advantages over the Random Forest model including slightly higher sensitivity or decreased resource cost, but the final recommendation of this analysis is the Random Forest model as described, as it has a balance between sensitivity, interpretability, and resource intensivity.
+
+# Approach & Data:
+
+## Problem Statement
+
+ABC Corporation would like to identify customers with a high risk of attrition (discontinuing services from ABC Corporation) and to understand what factors determine customer risk of attrition. ABC Corporation is seeking to understand customer risk of attrition and which factors are most associated with customers who leave the services of ABC Corporation. With this deeper understanding, ABC Corporation management intends to target their advertising and promotional efforts to most efficiently retain customers. It is the aim of this report to use a supervised classification problem, a predictive model which classifies an observation into two classes based on predictor variables, to accurately predict client attrition and determine which variables are most important for predicting attrition. Multiple different types of predictive model will be tested and iterated to determine the most accurate methodology. The most well-fitting model will be used to describe the relative importance of each predictor variable found in the data provided by ABC Corporation.
+
+## Summary of Variables
+
+ABC Corporation has provided a list of information on approximately 10,000 customers, including information on whether or not they have discontinued services from ABC Corporation. Appendix A describes all of the variables contained within this data set. The most important variable is Attrition_Flag, which represents whether or not a customer has attrited. Attrition_Flag will be the flag variable used by the predictive model as the predicted indicator of whether or not a customer leaves the services of ABC Corporation. The model will classify each customer by their predicted Attrition_Flag value, which it will determine using the predictor variables contained within the data set.
+
+The predictor variables include demographic information, including gender, marriage status, number of dependents, age, and education for each customer. The predictor variables also include information about the customer's activity with ABC Corporation—length of service with the corporation, credit utilization ratio, total number of transactions, total number spent, change in transaction quantity, and more.
+
+## Data Engineering
+
+Preliminary investigation of the data set shows substantial multicollinearity (see Appendix B for specific values), which could cause interference when fitting a model with a high number of predictors. One avenue for addressing this multicollinearity is to construct "supervariables" which capture the statistical and/or practical relevance of their constituent predictors. This can be done manually (to prioritize the real-world meaning of the predictors), or via statistical methods, which are geared more towards producing a well fit model, potentially at the cost of real-world interpretability and applications. Both avenues will be explored here as the problem statement has explicitly requested a well fit model to predict customer attrition in addition to an exploration of the factors which contribute to attrition. In order for ABC Corporation to effectively target their advertising and management efforts, the model must be able to accurately predict customer attrition risk, but in order for ABC Corporation to design these efforts, real-world interpretability must be preserved. Even if they are uncannily accurate in predicting, if the supervariables are too abstract to interpret, the corporation will be able to know exactly who will attrit, without having any understanding of how to change that. Below is a description of the novel supervariables constructed:
+
+**"Amt_Per_Trans"**: determined by dividing Total_Trans_Amt by Total_Trans_Ct, this variable represents the average amount spent per transaction by the customer.
+
+**"Lifetime_Prop"**: Defined as the proportion of the customers lifetime that they have been with ABC Corporation. Determined by dividing Months_on_book by (Customer_Age * 12 months/year). This variable is intended as a measurement of customer loyalty, standardized by age.
+
+While Credit_Limit and Avg_Open_To_Buy are extremely highly correlated, this colinearity has already been addressed in the initial data set via the derived variable "Avg_Utilization_Ratio" which is determined by calculating 1 - (Avg_Open_To_Buy / Credit_Limit). With that in mind, Avg_Open_To_Buy will be removed from the models, as the overall credit limit (something within the control of ABC Corporation) is a more valuable metric, while the information provided by the average amount of available credit (namely the customer's propensity for spending) is largely covered by the average utilization ratio, which is less correlated with Credit_Limit.
+
+The statistical method of choice for reducing the dimensionality of the data and addressing the problem of multicollinearity is a principal component analysis (PCA), which organizes the data in ordination space along several axes that best capture the variability in the data. In this way, PCA coerces the large number of variables in the data set down into a smaller number of axes supervariables. This reduces the dimensionality of the data, but the axes are not always very applicable to the real world. Principal component analysis was conducted on the data set and two sets of axes were created, one capturing 95% of the variability in the data, and one capturing only 80%. The 80% axes were calculated in order to provide an alternative for the models taht further reduced dimensionality (down to 11 supervariables), as the number of principal components required to reach 95% variability was quite high, with nearly the same number of dimensions as the original data (15 supervariables, compared to 19 original).
+
+Additionally, based on a visual analysis of the data distribution, the data appears non-normally distributed, which violates an assumption of many commonly used predictive models. This non-normality is confirmed by a Shapiro-Wilks normality test conducted for each variable. This can be addressed by transforming the data (which will be done for the appropriate models) or selecting a model that does not require normally distributed data.
+
+## Predictive Modeling Methods
+
+All models will be built using a training data set, randomly selected from the data provided by ABC Corporation. This training data set will comprise ~80% of the total data set, with the remaining ~20% reserved for testing. Models will not be exposed to the testing data set at any point during the training process to avoid data leakage; the test data will be used solely for model evaluation. Models will be evaluated by several metrics: training error, defined as the proportion of incorrect classifications when evaluated on the training set; testing accuracy, defined as the proportion of correct classifications when evaluated on the testing set; sensitivity, defined as the proportion of true positives (customers who will actually attrit) correctly classified by the model; and specificity, defined as the proportion of true negatives (customers who will not attrit) correctly classified by the model.
+
+Several predictive modeling methods will be explored in this report in order to address the two objectives laid out by ABC Corporation: (1) a model which accurately predicts customer attrition; and (2) a description of which customer attributes most strongly predict customer attrition. Each model, its advantages, and trade-offs, and any feature engineering steps conducted are described here:
+
+### **(1) Logistic Regression using supervariables defined with domain knowledge:**
+
+Logistic regression can suffer from model overfitting, especially with instances of multicollinearity in the predictor variables. The supervariables defined above from domain knowledge, as well as the removal of "Avg_Open_To_Buy" will help to address this concern. The predictors used for the model will be engineered by iterating the model until the best subset of predictors is determined.
+
+### **(2) Logistic Regression using principal component supervariables:**
+
+This model serves as an alternative to Model (1) which uses PCA to engineer optimal supervariables. The downside to this method is a potentially large loss in interpretability, depending on which principal components are used, which may hinder ABC Corporation's objective of determining the most important factors contributing to customer attrition. The principal components used for the model will be engineered by iterating the model until the best subset of principal components is determined.
+
+### **(3) K-Nearest neighbor analysis:**
+
+This model has the advantage of handling the non-normal distribution of the predictors well, although it can suffer from high dimensionality and high multicollinearity, both of which are present in the customer data. The number of nearest neighbors used in the model will be determined through cross-validation to produce the most accurate model.
+
+### **(4) Naive Bayes classifier:**
+
+This model assumes that there is no association between predictors, which helps to address the issue of high dimensionality. However, between the assumption of predictor independence and data normality, this model may prove inaccurate. The non-normal distribution of the predictors will be addressed with log transformation.
+
+### **(5) Random Forest model:**
+
+This model combines the output of several random decision tree models to create a more accurate classification prediction than an individual decision tree. Random forest has the advantage of generally high accuracy, the ability to neatly handle both numerical and categorical predictors, and reduced risk of overfitting. Additionally, it is easy and straightforward to interpret which predictors are most important in a random forest model.
+
+### **(6) Gradient Boosted Decision Trees:**
+
+This method iterates upon decision trees serially, adjusting the trees between iterations to better address the "difficult cases," which are represented by the classifications that the previous model failed to accurately predict. This results in a model that can generate accurate predictions, although it is comparatively slow and can be resource intensive. Depending on how frequently and to what scale ABC Corporation intends to make use of the model, the speed and cost associated with it may prove inconvenient.
+
+# Detailed Findings and Evaluation
+
+```{r Error Table Setup,include=FALSE}
+error.table<-matrix(data=NA,nrow=7,ncol=6)
+error.table<-as.data.frame(error.table)
+colnames(error.table)<-c("Model Name","Hyperparameter","Training Error","Test Accuracy","Sensitivity","Specificity")
+error.table[,1]<-c("Logistic Regression - Domain Knowledge","95% Principal Component Logistic Regression","80% Principal Component Logistic Regression","K-Nearest Neighbor Analysis","Naive Bayes Classifier","Random Forest","Gradient Boosting")
+error.table
+#compute a confusion matrix for each model, use those to determine specificity and sensitivity for each test. Sensitivity = proportion of true positives, specificity = proportion of true negatives (less important in this case).
+```
+
+```{r Prep, include = FALSE}
+#Converting all characters to factors
+customer[,c(1,3,5,6,7,8)]<-lapply(customer[,c(1,3,5,6,7,8)],as.factor)
+customer$Attrition_Flag<-factor(customer$Attrition_Flag, levels=c("Attrited Customer","Existing Customer"), labels=c(0,1))
+#levels(customer$Attrition_Flag)
+set.seed(117)
+sample <- sample(c(TRUE, FALSE), nrow(customer), replace=TRUE, prob=c(0.8,0.2))
+train <- as.data.frame(customer[sample, ])
+test <- as.data.frame(customer[!sample, ])
+```
+
+```{r Logistic Regression - Domain Knowledge,include = FALSE}
+customer$Amt_Per_Trans<-customer$Total_Trans_Amt/customer$Total_Trans_Ct
+customer$Lifetime_Prop<-customer$Months_on_book/customer$Customer_Age*12
+customer.dummies<-model.matrix(Attrition_Flag~.,data=customer)[,-1]
+customer.dummies<-cbind(Attrition_Flag=customer$Attrition_Flag,customer.dummies)
+customer.dummies[,1]<-customer.dummies[,1]-1
+
+set.seed(117)
+sample <- sample(c(TRUE, FALSE), nrow(customer.dummies), replace=TRUE, prob=c(0.8,0.2))
+train.dummies <- customer.dummies[sample, ]
+test.dummies <- customer.dummies[!sample, ]
+
+#train.dummies<-model.matrix(Attrition_Flag~.,data=train)[,-1]
+#train.dummies<-cbind(Attrition_Flag=train$Attrition_Flag,train.dummies)
+#train.dummies[,1]<-train.dummies[,1]-1
+
+#test.dummies<-model.matrix(Attrition_Flag~.,data=test)[,-1]
+#test.dummies<-cbind(Attrition_Flag=test$Attrition_Flag,test.dummies)
+#test.dummies[,1]<-test.dummies[,1]-1
+
+best.subset<-regsubsets(Attrition_Flag~.,data=as.data.frame(train.dummies),nbest=1)
+best.subset.summary<-summary(best.subset)
+#plot(best.subset, scale = "r2")
+best.names<-best.subset.summary$which[which.max(best.subset.summary$adjr2),]
+#best.predictors<-names(best.names)
+#best.predictors<-best.predictors[best.predictors!="(Intercept)"]
+subset.data<-as.data.frame(train.dummies[,c(best.names)])
+subset.test<-as.data.frame(test.dummies[,c(best.names)])
+final.model<-glm(Attrition_Flag~.,data=subset.data,family="binomial")
+summary(final.model)
+best.subset.predictions<-predict(final.model,newdata=as.data.frame(test.dummies)[,-1],type="response")
+best.subset.predictions<-ifelse(best.subset.predictions>0.5,1,0)
+test.dummies<-as.data.frame(test.dummies)
+
+conf.matrix<-table(Predicted=best.subset.predictions,Actual=test.dummies$Attrition_Flag)
+conf.matrix
+
+bsub.sensitivity<-conf.matrix[2,2]/sum(conf.matrix[,2])
+bsub.specificity<-conf.matrix[1,1]/sum(conf.matrix[,1])
+bsub.accuracy<-(conf.matrix[1,1]+conf.matrix[2,2])/sum(conf.matrix)
+train.dummies<-as.data.frame(train.dummies)
+train_predictions <- predict(final.model, newdata = train.dummies)
+train_predictions<-ifelse(train_predictions>0.5,1,0)
+train_predictions<-as.factor(train_predictions)
+# Create a confusion matrix to calculate misclassification rate
+conf_matrix_train <- confusionMatrix(train_predictions, as.factor(train.dummies$Attrition_Flag))
+# Calculate training error (misclassification rate)
+bsub.trerr <- 1 - conf_matrix_train$overall['Accuracy']
+
+error.table$`Training Error`[1]<-bsub.trerr
+error.table$`Test Accuracy`[1]<-bsub.accuracy
+error.table$Sensitivity[1]<-bsub.sensitivity
+error.table$Specificity[1]<-bsub.specificity
+error.table$Hyperparameter[1]<-"# predictors = 9"
+```
+
+```{r PCA Logistic Regression 95%, include = FALSE}
+customer.scaled<-train
+customer.scaled[,c(1,3,5,6,7,8)]<-lapply(customer.scaled[,c(1,3,5,6,7,8)],as.factor)
+customer.scaled[,c(1,3,5,6,7,8)]<-lapply(customer.scaled[,c(1,3,5,6,7,8)],as.numeric)
+customer.scaled<-scale(customer.scaled)[,-1]
+pca<-prcomp(customer.scaled)
+summary(pca)
+variance<-cumsum(pca$sdev^2)/sum(pca$sdev^2)
+index.95<-which(variance>=0.95)[1]
+components.95<-pca$x[,1:index.95]
+length(components.95[1,])
+index.80<-which(variance>=0.80)[1]
+components.80<-pca$x[,1:index.80]
+length(components.80[1,])
+
+#Test PCA data
+test.scaled<-test
+test.scaled[,c(1,3,5,6,7,8)]<-lapply(test.scaled[,c(1,3,5,6,7,8)],as.factor)
+test.scaled[,c(1,3,5,6,7,8)]<-lapply(test.scaled[,c(1,3,5,6,7,8)],as.numeric)
+test.scaled<-scale(test.scaled)[,-1]
+
+#Models
+components.95<-as.data.frame(components.95)
+components.95$Attrition_Flag<-train$Attrition_Flag
+pcr.model.95<-glm(Attrition_Flag~.,data=components.95,family="binomial")
+summary(pcr.model.95)
+test.pca<-predict(pca,newdata=test.scaled)
+test.95<-as.data.frame(test.pca[,1:15])
+test.95$Attrition_Flag<-test$Attrition_Flag
+test.95<-data.frame(test.95)
+colnames(test.95)<-colnames(components.95)
+pcr.predictions.95<-predict(pcr.model.95,newdata=test.95,type="response")
+pcr.err.95<-sqrt(mean(pcr.predictions.95-as.numeric(test.95$Attrition_Flag))^2)
+paste0("95% Variance PCA RMSE: ",pcr.err.95)
+
+pcr.predictions.95<-ifelse(pcr.predictions.95>0.5,1,0)
+conf.matrix<-table(Predicted=pcr.predictions.95,Actual=test.95$Attrition_Flag)
+conf.matrix
+
+pca.sensitivity<-conf.matrix[2,2]/sum(conf.matrix[,2])
+pca.specificity<-conf.matrix[1,1]/sum(conf.matrix[,1])
+pca.accuracy<-(conf.matrix[1,1]+conf.matrix[2,2])/sum(conf.matrix)
+
+components.95<-as.data.frame(components.95)
+
+train_predictions <- predict(pcr.model.95, newdata = components.95)
+train_predictions<-ifelse(train_predictions>0.5,1,0)
+train_predictions<-as.factor(train_predictions)
+# Create a confusion matrix to calculate misclassification rate
+conf_matrix_train <- confusionMatrix(train_predictions, as.factor(train$Attrition_Flag))
+# Calculate training error (misclassification rate)
+pca.trerr <- 1 - conf_matrix_train$overall['Accuracy']
+
+error.table$`Training Error`[2]<-pca.trerr
+error.table$`Test Accuracy`[2]<-pca.accuracy
+error.table$Sensitivity[2]<-pca.sensitivity
+error.table$Specificity[2]<-pca.specificity
+
+```
+
+```{r PCA Logistic Regression 80%, include = FALSE}
+components.80<-as.data.frame(components.80)
+components.80$Attrition_Flag<-train$Attrition_Flag
+pcr.model.80<-glm(Attrition_Flag~.,data=components.80,family="binomial")
+summary(pcr.model.80)
+test.pca<-predict(pca,newdata=test.scaled)
+test.80<-as.data.frame(test.pca[,1:11])
+test.80$Attrition_Flag<-test$Attrition_Flag
+test.80<-data.frame(test.80)
+colnames(test.80)<-colnames(components.80)
+pcr.predictions.80<-predict(pcr.model.80,newdata=test.80,type="response")
+pcr.err.80<-sqrt(mean(pcr.predictions.80-as.numeric(test.80$Attrition_Flag))^2)
+paste0("80% Variance PCA RMSE: ",pcr.err.80)
+
+pcr.predictions.80<-ifelse(pcr.predictions.80>0.5,1,0)
+conf.matrix<-table(Predicted=pcr.predictions.80,Actual=test.80$Attrition_Flag)
+conf.matrix
+
+pca.sensitivity<-conf.matrix[2,2]/sum(conf.matrix[,2])
+pca.specificity<-conf.matrix[1,1]/sum(conf.matrix[,1])
+pca.accuracy<-(conf.matrix[1,1]+conf.matrix[2,2])/sum(conf.matrix)
+
+components.95<-as.data.frame(components.95)
+
+train_predictions <- predict(pcr.model.80, newdata = components.80)
+train_predictions<-ifelse(train_predictions>0.5,1,0)
+train_predictions<-as.factor(train_predictions)
+# Create a confusion matrix to calculate misclassification rate
+conf_matrix_train <- confusionMatrix(train_predictions, as.factor(train$Attrition_Flag))
+# Calculate training error (misclassification rate)
+pca.trerr <- 1 - conf_matrix_train$overall['Accuracy']
+
+error.table$`Training Error`[3]<-pca.trerr
+error.table$`Test Accuracy`[3]<-pca.accuracy
+error.table$Sensitivity[3]<-pca.sensitivity
+error.table$Specificity[3]<-pca.specificity
+```
+
+```{r KNN Analysis w/ Cross Validation, include = FALSE}
+set.seed(117)
+train_control <- trainControl(method = "cv", number = 10)  # 10-fold cross-validation
+knn_model <- train(Attrition_Flag~., data = train, method = "knn", trControl=train_control, tuneLength = 10)
+print(knn_model)
+knn_predictions<-predict(knn_model,newdata=test)
+knn_rmse<-RMSE(as.numeric(knn_predictions),as.numeric(test$Attrition_Flag))
+paste0("KNN RMSE (K = 7): ",knn_rmse)
+
+conf.matrix <- table(Predicted = knn_predictions, Actual = test$Attrition_Flag)
+
+sensitivity<-conf.matrix[2,2]/sum(conf.matrix[,2])
+specificity<-conf.matrix[1,1]/sum(conf.matrix[,1])
+accuracy<-(conf.matrix[1,1]+conf.matrix[2,2])/sum(conf.matrix)
+knn_model$results
+
+train_predictions <- predict(knn_model, newdata = train)
+# Create a confusion matrix to calculate misclassification rate
+conf_matrix_train <- confusionMatrix(train_predictions, train$Attrition_Flag)
+# Calculate training error (misclassification rate)
+trerr <- 1 - conf_matrix_train$overall['Accuracy']
+
+error.table$`Training Error`[4]<-trerr
+error.table$`Test Accuracy`[4]<-accuracy
+error.table$Sensitivity[4]<-sensitivity
+error.table$Specificity[4]<-specificity
+
+error.table$Hyperparameter[4]<-"K = 7"
+```
+
+```{r Naive Bayes, include=FALSE}
+nb.model<-naive_bayes(Attrition_Flag~.,data=train)
+print(nb.model)
+predicted.nb<-predict(nb.model, test)
+conf.matrix<-table(Predicted=predicted.nb, Actual=test$Attrition_Flag)
+conf.matrix
+
+sensitivity<-conf.matrix[2,2]/sum(conf.matrix[,2])
+specificity<-conf.matrix[1,1]/sum(conf.matrix[,1])
+accuracy<-(conf.matrix[1,1]+conf.matrix[2,2])/sum(conf.matrix)
+
+train_predictions <- predict(nb.model, newdata = train)
+# Create a confusion matrix to calculate misclassification rate
+conf_matrix_train <- confusionMatrix(train_predictions, train$Attrition_Flag)
+# Calculate training error (misclassification rate)
+trerr <- 1 - conf_matrix_train$overall['Accuracy']
+
+error.table$`Training Error`[5]<-trerr
+error.table$`Test Accuracy`[5]<-accuracy
+error.table$Sensitivity[5]<-sensitivity
+error.table$Specificity[5]<-specificity
+
+error.table$Hyperparameter[5]<-"α = 1"
+```
+
+```{r Random Forest, include=FALSE}
+m.grid<-expand.grid(mtry=c(1:10))
+y<-factor(train$Attrition_Flag)
+levels(y)<-make.names(levels(y))
+rf.model<-train(x=train[,-1],
+                y=y,method="rf",
+                trControl=trainControl(method="cv",
+                                       number=10
+                                       ),
+                tuneGrid=m.grid,
+                metric="Accuracy")
+
+predicted.rf<-predict(rf.model, test)
+conf.matrix<-table(Predicted=predicted.rf, Actual=test$Attrition_Flag)
+conf.matrix
+
+sensitivity<-conf.matrix[2,2]/sum(conf.matrix[,2])
+specificity<-conf.matrix[1,1]/sum(conf.matrix[,1])
+accuracy<-(conf.matrix[1,1]+conf.matrix[2,2])/sum(conf.matrix)
+
+train_predictions <- predict(rf.model, train[,-1])
+train_predictions<-ifelse(train_predictions=="X1",1,0)
+train_predictions<-as.factor(train_predictions)
+# Create a confusion matrix to calculate misclassification rate
+conf_matrix_train <- confusionMatrix(train_predictions, train$Attrition_Flag)
+# Calculate training error (misclassification rate)
+trerr <- 1 - conf_matrix_train$overall['Accuracy']
+
+error.table$`Training Error`[6]<-trerr
+error.table$`Test Accuracy`[6]<-accuracy
+error.table$Sensitivity[6]<-sensitivity
+error.table$Specificity[6]<-specificity
+
+error.table$Hyperparameter[6]<-"m = 5"
+```
+
+```{r Gradient Boosting, include=FALSE}
+shrinkage.grid<-expand.grid(shrinkage=c(0.001,0.005,0.01,0.05,0.1,0.5,1),n.trees=1000,interaction.depth=4,n.minobsinnode=10)
+train.control<-trainControl(method="cv",number=5)
+gbm.model<-train(Attrition_Flag~.,data=train,method="gbm",trControl=train.control,tuneGrid=shrinkage.grid)
+
+predicted.gbm<-predict(gbm.model, test)
+conf.matrix<-table(Predicted=predicted.gbm, Actual=test$Attrition_Flag)
+conf.matrix
+
+sensitivity<-conf.matrix[2,2]/sum(conf.matrix[,2])
+specificity<-conf.matrix[1,1]/sum(conf.matrix[,1])
+accuracy<-(conf.matrix[1,1]+conf.matrix[2,2])/sum(conf.matrix)
+
+train_predictions <- predict(gbm.model, train[,-1])
+train_predictions<-ifelse(train_predictions=="X1",1,0)
+train_predictions<-as.factor(train_predictions)
+# Create a confusion matrix to calculate misclassification rate
+conf_matrix_train <- confusionMatrix(train_predictions, train$Attrition_Flag)
+# Calculate training error (misclassification rate)
+trerr <- conf_matrix_train$overall['Accuracy']
+
+error.table$`Training Error`[7]<-trerr
+error.table$`Test Accuracy`[7]<-accuracy
+error.table$Sensitivity[7]<-sensitivity
+error.table$Specificity[7]<-specificity
+
+error.table$Hyperparameter[7]<-"num_trees = 1000, λ = 0.1, nint_depth = 4"
+```
+
+```{r Error Table}
+kable(error.table,digits=3,caption="Table 1 - Summary Evaluation of Classification Models. Relevant hyperparameters that were tweaked to optimize each model are contained in the Hyperparameter column. Test accuracy is calculated as the overall proportion of correct classifications. Sensitivity is the proportion of true positives (attriting customers that the model predicts will attrit) predicted by the model. Specificity is the proportion of true negatives (non-attriting customers that the model predicts will not attrit) predicted by the model. Random Forest and Gradient Boosting stand out as the most accurate and sensitive models, followed by Logistic Regression using domain knowledge supervariables.")
+```
+
+Exploration of each model, summarized in Table 1, reveals that Random Forest and Gradient Boosting are the most optimal models for the first business question presented by ABC Corporation, which requests a model that can accurately predict customer attrition. Logistic Regression with domain knowledge supervariables and an ideal subset of predictors performs worse than the tree-based models but better than the alternatives presented.
+
+Random Forest has a test accuracy value of 0.963, meaning the model correctly classifies predictions overall 96.3% of the time. Random Forest slightly favors the positive class, which represents customer attrition, with a sensitivity of 0.980, meaning the model correctly predicts true positives (customers that the model predicts will attrit that truly will attrit) 98% of the time, and a specificity of 0.871, meaning the model correctly predicts true negatives (customers that the model predicts will not attrit that truly will not attrit) 87.1% of the time.
+Gradient Boosting has a test accuracy of 0.966, meaning the model correctly classifies predictions overall 96.6% of the time. Gradient Boosting also favors the positive class (attriting customers), with a sensitivity of 0.984 and a specificity of 0.865. The Gradient Boosting model slightly outperforms Random Forest in each evaluation metric, although Random Forest performs extremely well as well. 
+
+While it has a much lower test accuracy value, the Logistic Regression model using supervariables constructed with domain knowledge (as described above) and the ideal combination of predictors determined through cross-validation has a similarly high sensitivity value of 0.962, which suggests that the model correctly predicts 96.2% of true positives. Considering that true positives represent customers who will leave the services of ABC Corporation, a high sensitivity is the most important metric of model performance to the goals of ABC Corporation. Additionally, because this model was built using domain knowledge to reduce multicollinearity, the interpretability and real-world applicability of the results remain high. This model represents a less accurate but far less resource intensive alternative to Random Forest or Gradient Boosting, which have slightly better performance but require significantly more processing power every time they are run.
+
+```{r ROC/AUC Calculations,include=FALSE}
+best.subset.probs<-predict(final.model,newdata=as.data.frame(test.dummies)[,-1],type="response")
+pca.95.probs<-predict(pcr.model.95,newdata=test.95,type="response")
+pca.80.probs<-predict(pcr.model.80,newdata=test.80,type="response")
+knn.probs<-predict(knn_model,newdata=test,type="prob")
+knn.probs<-knn.probs[,-1]
+nb.probs<-predict(nb.model,newdata=test,type="prob")
+nb.probs<-nb.probs[,-1]
+rf.probs<-predict(rf.model,newdata=test,type="prob")
+rf.probs<-rf.probs[,-1]
+gbm.probs<-predict(gbm.model,newdata=test,type="prob")
+gbm.probs<-gbm.probs[,-1]
+
+
+
+manual.log.roc<-roc(test$Attrition_Flag,best.subset.probs)
+pca.95.roc<-roc(test.95$Attrition_Flag,pca.95.probs)
+pca.80.roc<-roc(test.80$Attrition_Flag,pca.80.probs)
+knn.roc<-roc(test$Attrition_Flag,as.numeric(knn.probs))
+nb.roc<-roc(test$Attrition_Flag,as.numeric(nb.probs))
+rf.roc<-roc(test$Attrition_Flag,as.numeric(rf.probs))
+gbm.roc<-roc(test$Attrition_Flag,as.numeric(gbm.probs))
+```
+
+```{r ROC/AUC Curves}
+plot(manual.log.roc,main="Figure 1: ROC Curves of Various Classification Models with AUC Values",xlim=c(1,0),ylim=c(0,1),col="cyan3")
+lines(pca.95.roc,col="green3")
+lines(pca.80.roc,col="orange")
+lines(knn.roc,col="salmon")
+lines(nb.roc,col="cornflowerblue")
+lines(rf.roc,col="brown1")
+lines(gbm.roc,col="deeppink4")
+
+auc.values <- c(round(manual.log.roc$auc, 2), 
+                round(pca.95.roc$auc, 2), 
+                round(pca.80.roc$auc, 2), 
+                round(knn.roc$auc, 2), 
+                round(nb.roc$auc, 2), 
+                round(rf.roc$auc, 2), 
+                round(gbm.roc$auc, 2))
+#text(-0.25, 0.95, paste("Logistic AUC =", round(manual.log.roc$auc, 1)), col = "cyan3")
+#text(-0.25, 0.9, paste("PCA 95% AUC =", round(pca.95.roc$auc, 1)), col = "green3")
+#text(-0.25, 0.85, paste("PCA 80% AUC =", round(pca.80.roc$auc, 1)), col = "orange")
+#text(-0.25, 0.8, paste("KNN AUC =", round(knn.roc$auc, 1)), col = "salmon")
+#text(-0.25, 0.75, paste("Naive Bayes AUC =", round(nb.roc$auc, 1)), col = "cornflowerblue")
+#text(-0.25, 0.7, paste("Random Forest AUC =", round(rf.roc$auc, 1)), col = "brown1")
+#text(-0.25, 0.65, paste("Gradient Boosting AUC =", round(gbm.roc$auc, 1)), col = "deeppink4")
+legend("bottomright", 
+       legend = paste(c("Logistic (manual)", "PCA 95%", "PCA 80%", "KNN","Naive Bayes","Random Forest","Gradient Boosting"),"AUC",auc.values), 
+       col = c("cyan3", "green3", "orange", "salmon","cornflowerblue","brown1","deeppink4"), 
+       lwd = 2, 
+       cex = 0.8)
+long.caption<-"ROC curves and AUC (Area under Curve) values for each model explored in this analysis. Random Forest and Gradient Boosting have the most optimal performance of the 7 models, as they sacrifice the least specificity while improving sensitivity. Additionally, they reach a higher peak sensitivity than the other models, which is of particular importance to the intended use case of this analysis. AUC values of 0.99 for both Random Forest and Gradient Boosting models suggest that these models are exceptionally accurate at predicting customer attrition classes."
+wrapped.caption<-paste(strwrap(long.caption,width=50),collapse="\n")
+mtext(wrapped.caption, 
+      side = 1, line = 16, cex = 0.9, col = "black")
+```
+
+The ROC curves and AUC values described in Figure 1 show that Random Forest (AUC = 0.99) and Gradient Boosting (AUC = 0.99) again perform much better than the other alternatives explored in this analysis, with the domain knowledge Logistic Regression model (AUC = 0.93) following close behind. This reinforces the above conclusions: Gradient Boosting is the most optimal and accurate model described, Random Forest has very similar performance to Gradient Boosting, and logistic regression with domain knowledge variables has notably worse performance, but rises above the other alternatives and is far less resource intensive than the costly, tree-based models.
+
+
+```{r GB and RF importance,include=FALSE}
+gbm.importance<-summary(gbm.model)
+important.names<-rownames(gbm.importance)
+gbm.importance<-cbind(important.names,gbm.importance[,2])
+colnames(gbm.importance)<-c("Variable Name","Importance")
+#kable(gbm.importance[1:4,])
+
+rf.varImp<-varImp(rf.model,scale=FALSE)
+rf.importance<-rf.varImp$importance
+rf.importance<-rf.importance[order(-rf.importance$Overall),]
+rf.importance<-cbind(important.names[1:5],rf.importance[1:5])
+rf.importance<-as.data.frame(rf.importance)
+colnames(rf.importance)<-c("Variable Name","Importance")
+```
+
+```{r GB and RF importance Table}
+importance.table<-as.data.frame(cbind(gbm.importance[1:5,],rf.importance$Importance[1:5]))
+importance.table[,2]<-as.numeric(importance.table[,2])
+importance.table[,3]<-as.numeric(importance.table[,3])
+colnames(importance.table)<-c("Variable Name","GBM","Random Forest")
+kable(importance.table,digits=3,caption="Summary of the five most important variables predicting customer attrition, as determined by the Gradient Boosting and Random Forest models. After the fith most important variable, importance begins to drop off significantly (roughly halving in importance with each step) in both models. Both models selected total transaction count, total transaction amount, total revolving balance, the change in total count from quarter four to quarter one, and the total number of products used (total relationship count) as the most important customer factors that contribute to whether or not a customer will leave the services of ABC Corporation. Note that the relative importance values for the Random Forest and Gradient Boosting models are on different scales and cannot be directly compared between models, although the order remains comparable.")
+```
+
+The importance values determined by both the Random Forest and Gradient Boosting models produce the same hierarchy of importance when predicting customer attrition. Both models revealed total transaction count, total transaction amount, total revolving balance, the change in total count from quarter four to quarter one, and the total number of products utilized as the primary customer attributes that contribute to whether or not a customer will leave from the services of ABC Corporation. The partial dependence plots in Figures 2 and 3 reveal that, according to both models, while holding all other variables constant:
+
+(a) An increase in total transaction count, total count change between quarters four and one, or total number of products used are associated with a decreased likelihood of attrition; 
+(b) an increase in total transaction amount is first associated with a decreased likelihood of attrition, until about ~5000 transactions, at which point further increase is associated with either a lower decrease in the likelihood or an increase in the likelihood of attrition;
+(c) an increase in total revolving balance is associated with a parabolic decrease in likelihood of attrition, with a maximum decrease in likelihood at around ~$1500 in revolving balance.
+
+The logistic regression model predicts amount per transaction (one of the derived supervariables), total revolving balance, total transaction amount, and customer gender as the most important variables. However, these estimates have a relatively large standard error associated with them, to the point that many of their error ranges overlap, suggesting uncertainty in the ordering of importance. This makes logistic regression less reliable for ascribing importance to customer attributes.
+
+```{r RF pdp plots}
+features<-importance.table$`Variable Name`
+
+par(mfrow=c(2,3))
+
+rf.pdp.plots <- lapply(features, function(feature) {
+  pdp<-partial(rf.model$finalModel, pred.var = feature, train = train,type="classification")
+  plot(pdp,ylab="Influence on Attrition")
+})
+mtext("Figure 2 - Influence of Most Important Variables on Customer Attrition in Random Forest Model ", side=3, line=18, cex=1, font=1)
+```
+
+```{r GB pdp plots}
+par(mfrow=c(2,3))
+
+gbm.pdp.plots <- lapply(features, function(feature) {
+  pdp<-partial(gbm.model, pred.var = feature, train = train,type="classification")
+  plot(pdp,ylab="Influence on Attrition")
+})
+mtext("Figure 3 - Influence of Most Important Variables on Customer Attrition in Gradient Boosting Model ", side=3, line=18, cex=1, font=1)
+```
+
+# Recommendations
+
+## Summary of Results
+
+The Random Forest and Gradient Boosting models produced very accurate and similar predictions. Both of these models had very high sensitivity values. Both of these models described the same customer attributes as most important, in the same order. The Logistic Regression model using an ideal subset and supervariables built with domain knowledge produced a less accurate model and a less reliable order of importance for predicting customer attrition.
+
+ABC Corporation should utilize the Random Forest model to address the business questions posed. Random Forest had extremely high performance, with a test accuracy of 0.963, a sensitivity of 0.980 and an AUC value of 0.99. Not only does this suggest very high overall performance, it suggests that the Random Forest model specifically is very accurate when predicting true positives, which represents customers who will attrit. This should be the most important evaluation metric to ABC Corporation, as those customers are the target of this analysis. If the model is able to accurately predict who will attrit, the other predictions, such as true negatives, do not matter as much. It is the priority of ABC Corporation to identify as many customers who will attrit as possible, even if that results in some false positives, as they will lose less resources from the increased engagement and marketing towards those customers as they would lose in the event that they miss a customer who will leave their services. It is better to favor the positive class in this model, which Random Forest does well. Additionally, Random Forest produces a very easy to interpret list of important predictor variables and their relative contribution to the model. While the importance values are not easily applicable to the real world, the ordering is, which is sufficient for ABC Corporation to focus their marketing and promotional efforts toward customers. While Gradient Boosting performed slightly better than Random Forest, the difference was marginal, and Random Forest has some key advantages over Gradient Boosting. The actual Random Forest tree models are easier to interpret than Gradient Boosting, should ABC Corporation want to dig deeper into the specifics. The Random Forest model proposed is additionally less resource intensive than the Gradient Boosting model described in this analysis, as the Gradient Boosting model has a high number of deep trees which results in a high number of lengthy iterations. Random Forest, despite also being complex in this instance, ends up being a more cost-efficient model.
+
+If cost or time efficiency is a priority for ABC Corporation, they could also explore the logistic regression model defined using domain knowledge supervariables explored in this analysis. This model has a noticeably lower performance than the Random Forest model, but requires far less resources to train. The exact use case of these models is not explored in its entirety in this analysis; depending on how ABC Corporation intends to use the final model (how often they will run it and at what scale), the relative cost of the decreased accuracy (and subsequent loss in revenue from missed attriting customers) may be outweighed by the computational cost of the more demanding Random Forest model. ABC Corporation would need to provide more information or conduct their own cost analysis to determine this, so logistic regression is presented here as a less resource-intensive alternative. One critical downside for this logistic regression model specifically is that the high standard error on the estimate coefficients makes determining an order of importance difficult.
+
+## Conclusion
+
+The final recommendation of this report is that ABC Corporation utilize the Random Forest model described to accurately predict customer attrition with a 98% success rate. This Random Forest model provides an ordered list of relative importance of each customer attribute in how they predict customer attrition. This model should therefore be used to both identify which customers will attrit and also to inform what customer factors ABC Corporation needs to address through their marketing and management efforts. For example, the an increase in the total number of products or services utilized by a customer is associated with a decreased risk of attrition; ABC Corporation should therefore try to increase the number of services that high-risk customers use, either through bundling offers, introduction of novel services, or otherwise. If the services that ABC Corporation or their customer base change dramatically as a result of new practices to address the results of this model, then a new analysis should be conducted to incorporate the effect those changes may have. 
+
+# Appendix A: Data Dictionary
+
+```{r}
+dictionary<-read.csv("data_dictionary.csv")
+kable(dictionary,caption="Data dictionary provided by ABC Corporation defining each of the variables contained within the provided data set.")%>%
+  kable_styling(font_size=10)%>%
+  column_spec(2, width = "10cm")
+```
+
+# Appendix B: Multicollinearity Matrix
+
+```{r}
+customer[,c(1,3,5,6,7,8)]<-lapply(customer[,c(1,3,5,6,7,8)],as.factor)
+customer[,c(1,3,5,6,7,8)]<-lapply(customer[,c(1,3,5,6,7,8)],as.numeric)
+nums.cor<-as.data.frame(cor(customer))
+highlight_cells <- function(mat) {
+  mat_with_styles <- matrix("", nrow = nrow(mat), ncol = ncol(mat))
+  
+  for (i in 1:nrow(mat)) {
+    for (j in 1:ncol(mat)) {
+      # Apply LaTeX bold formatting for values between 0.7 and 1
+      if (mat[i, j] > 0.7 & mat[i, j] < 1) {
+        # Directly assign LaTeX bold formatting to the cell
+        mat_with_styles[i, j] <- sprintf("\\textbf{%0.3f}", mat[i, j])
+      } else {
+        mat_with_styles[i, j] <- sprintf("%0.3f", mat[i, j])
+      }
+    }
+  }
+  return(mat_with_styles)
+}
+
+highlight_cor<-as.data.frame(highlight_cells(nums.cor))
+rownames(highlight_cor)<-row.names(nums.cor)
+colnames(highlight_cor)<-row.names(nums.cor)
+kable(highlight_cor[,c(1,2,9,13,15,17,18)], digits=3, escape=FALSE,caption = "Subset of the correlation matrix showing the correlation between AttritionFlag and all other variables, as well as variables flagged as collinear. Bolded values represent strong correlation between predictor variables, which suggests collinearity in those variables.") %>%
+  column_spec(1, width = "3cm")%>%
+  column_spec(2, width = "1.5cm")%>%
+  column_spec(3, width = "1.5cm")%>%
+  column_spec(4, width = "1.5cm")%>%
+  column_spec(5, width = "1.5cm")%>%
+  kable_styling(font_size=7,position="left")
+```
+
+# Appendix C: Kolmogorov-Smirnov Test for Normality Results
+
+```{r,warning=FALSE}
+#par(mfrow=c(2,4),mar = c(4, 4, 1, 1),oma=c(0,0,0,0))
+#plot(data=nums.cor,Attrition_Flag~.)
+ks.results<-matrix(data=NA,nrow=(length(customer)),ncol=4)
+n<-as.numeric(length(customer))
+#ks.result<-ks.test(customer[,3],y="pnorm")
+for(i in 1:n){
+  ks.results[i,1]<-colnames(customer)[i]
+  ks.results[i,2]<-as.numeric(ks.test(customer[,i],y="pnorm")$statistic)
+  if (ks.test(customer[,i],y="pnorm")$p.value<0.05){
+    ks.results[i,3]<-"p < 0.05"
+  }
+  else{
+    ks.results[i,3]<-"p > 0.05"
+  }
+  if (ks.test(customer[,i],y="pnorm")$p.value<0.05){
+    ks.results[i,4]<-"Non-normal"
+  }
+  else{
+    ks.results[i,4]<-"Normal"
+  }
+}
+ks.results<-as.data.frame(ks.results)
+ks.results[,2]<-as.numeric(ks.results[,2])
+colnames(ks.results)<-c("Variable","Kolmogorov-Smirnov Test Statistic","p-Value","Distribution Type")
+kable(ks.results,digits=3,escape=FALSE,caption="Appendix C: Kolmogorov-Smirnov test for normality results for each variable in the data presented by ABC Corporation. The null hypothesis of this test states that the data is normally distributed. A P-value below 0.05 rejects this null hypothesis, suggesting that the data is not normally distributed. Every variable in this data set, both predictor and dependent, rejects this null hypothesis, suggesting that they all have non-normal distributions.")%>%
+  column_spec(1, width = "3cm")%>%
+  column_spec(2, width = "3cm")%>%
+  column_spec(3, width = "3cm")%>%
+  column_spec(4, width = "3cm")%>%
+  kable_styling(font_size=10,position="left")
+```
