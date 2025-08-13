@@ -1,0 +1,6 @@
+"0","pca_data <- final_data %>% select(where(is.numeric))"
+"0","pca_data <- pca_data[, apply(pca_data, 2, var) != 0]"
+"0","pca_data <- na.omit(pca_data)"
+"0","pca_result <- prcomp(pca_data, scale. = TRUE, center = TRUE)"
+"0","explained_var <- summary(pca_result)$importance[2, ]"
+"0","plot(explained_var,type=""b"",main=""PCA Results Scree Plot"",ylab=""Proportion of Variance Explained"",xlab=""Principal Component"")"

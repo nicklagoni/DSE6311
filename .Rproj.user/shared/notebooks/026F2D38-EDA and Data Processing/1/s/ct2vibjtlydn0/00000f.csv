@@ -1,0 +1,7 @@
+"0","transects<-read.csv(""transects.csv"")"
+"0","echinoderm_counts<-read.csv(""echinoderm_counts.csv"")"
+"0","echinoderm_measurements<-read.csv(""echinoderm_measurements.csv"")"
+"0","motileInvert_counts<-read.csv(""motileInvert_counts.csv"")"
+"0","motileInvert_measurements<-read.csv(""motileInvert_measurements.csv"")"
+"0","photoquadrats<-read.csv(""photoquadrats.csv"")"
+"0",""
