@@ -334,6 +334,11 @@ clean_data_percent<-clean_data%>%
 logit_data<-clean_data_percent%>%
   mutate(across(percent_cover_cols,~qlogis(pmin(pmax(.,0.0001),1-0.0001)))) 
 
+logit_skew_fuc<-skewness(logit_data$rockweed_fucus_spp)
+logit_skew_asco<-skewness(logit_data$knotted_wrack_a_nodosum)
+skew_fuc<-skewness(clean_data$rockweed_fucus_spp)
+skew_asco<-skewness(clean_data$knotted_wrack_a_nodosum)
+
 #Remove unimportant terms
 
 #have to limit the range from 0.0001 to 0.9999 otherwise it gives me NaNs and -Inf values.
