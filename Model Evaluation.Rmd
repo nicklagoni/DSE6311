@@ -488,6 +488,6 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
 ```{r}
 #Model_results
 logit_results<-flexible_lagged_rf_model(clean_data,logit_transform = TRUE,percent_cover_cols = percent_cover_cols)
-raw_results<-flexible_lagged_rf_model(clean_data,logit_transform = TRUE,percent_cover_cols = percent_cover_cols)
+raw_results<-flexible_lagged_rf_model(clean_data,logit_transform = FALSE,percent_cover_cols = percent_cover_cols)
 ```
 
