@@ -115,7 +115,7 @@ zero_list<-colnames(zero_data)
 clean_data<-clean_data%>%
   select(-all_of(zero_list))
 
-
+percent_cover_cols<-colnames(clean_data[,c(3:26)])
 clean_data_lag <- clean_data %>%
   arrange(plot_id, start_date) %>%
   group_by(plot_id) %>%
@@ -154,7 +154,6 @@ abline(0, 1)
 
 # Out-of-Bag Random Forest using Logit Transformation
 ```{r}
-percent_cover_cols<-colnames(clean_data[,c(3:26)])
 clean_data_percent<-clean_data%>%
   mutate(across(all_of(percent_cover_cols),~./100)) #converting to a 0 - 1 scale for logit transformation
 logit_data<-clean_data_percent%>%
@@ -220,8 +219,6 @@ sqrt(mse_asco)
 sqrt(mse_fuc)
 ```
 
-
-
 # Feature Selection
 ```{r}
 models <- list(
@@ -237,8 +234,8 @@ unimportant_vars <- union(
   rownames(filter(importance_vals$fuc_oob,  value..IncMSE <= 0))
 )
 
-logit_data<-logit_data%>%
-  select(-unimportant_vars)
+#logit_data<-logit_data%>%
+#  select(-unimportant_vars)
 ```
 
 # OOB Random Forest w/ Logit Transformation and Feature Selection
@@ -330,16 +327,11 @@ run_lagged_rf_logit <- function(df, percent_cover_cols){
   ntree_values <- seq(100, 1000, by=50)
   tune_grid <- expand.grid(mtry = mtry_values, .ntree = ntree_values) # placeholder for caret; will handle ntree in loop
   
-  # Helper function to train RF with given ntree
-  train_rf <- function(formula, data, mtry, ntree) {
-    randomForest(formula, data = data, mtry = mtry, ntree = ntree)
-  }
-  
   # 6. Tune Ascophyllum RF
   best_rmse_asco <- Inf
   for (m in mtry_values) {
     for (n in ntree_values) {
-      model <- train_rf(formula_asco, df_lag, mtry = m, ntree = n)
+      model <- randomForest(formula_asco, df_lag, mtry = m, ntree = n)
       preds <- predict(model, df_lag)
       rmse_val <- sqrt(mean((100*plogis(preds) - 100*plogis(df_lag$knotted_wrack_a_nodosum))^2))
       if (rmse_val < best_rmse_asco) {
@@ -353,7 +345,7 @@ run_lagged_rf_logit <- function(df, percent_cover_cols){
   best_rmse_fuc <- Inf
   for (m in mtry_values) {
     for (n in ntree_values) {
-      model <- train_rf(formula_fuc, df_lag, mtry = m, ntree = n)
+      model <- randomForest(formula_fuc, df_lag, mtry = m, ntree = n)
       preds <- predict(model, df_lag)
       rmse_val <- sqrt(mean((100*plogis(preds) - 100*plogis(df_lag$rockweed_fucus_spp))^2))
       if (rmse_val < best_rmse_fuc) {
@@ -387,13 +379,13 @@ run_lagged_rf_logit <- function(df, percent_cover_cols){
   return(list(Metrics = metrics, Best_Hyperparameters = best_params))
 }
 
-run_lagged_rf(logit_data,percent_cover_cols = percent_cover_cols)
+#run_lagged_rf(logit_data,percent_cover_cols = percent_cover_cols)
 ```
 
 # Flexible Modeling Function
 
 ```{r}
-flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = FALSE) {
+flexible_lagged_oob_model <- function(df, percent_cover_cols, logit_transform = FALSE, unimportant_vars) {
   
   # 1. Optional logit transform
   if(logit_transform) {
@@ -408,7 +400,8 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
     group_by(plot_id) %>%
     mutate(across(all_of(percent_cover_cols), ~ dplyr::lag(., n = 1), .names = "lag1_{col}")) %>%
     ungroup() %>%
-    filter(!is.na(lag1_rockweed_fucus_spp))
+    filter(!is.na(lag1_rockweed_fucus_spp))%>%
+    select(-unimportant_vars)
   
   # 3. Formulas
   predictors <- grep("^lag1_", names(df_lag), value = TRUE)
@@ -419,16 +412,11 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
   mtry_values <- seq(2, floor(length(predictors)/2), by = 2)
   ntree_values <- seq(200, 1000, by = 100)
   
-  # Helper to train RF
-  train_rf <- function(formula, data, mtry, ntree) {
-    randomForest(formula, data = data, mtry = mtry, ntree = ntree)
-  }
-  
   # 5. Tune Ascophyllum RF
   best_rmse_asco <- Inf
   for(m in mtry_values){
     for(n in ntree_values){
-      model <- train_rf(formula_asco, df_lag, mtry = m, ntree = n)
+      model <- randomForest(formula_asco, df_lag, mtry = m, ntree = n)
       preds <- predict(model, df_lag)
       if(logit_transform) preds <- 100 * plogis(preds)
       rmse_val <- sqrt(mean((preds - df_lag$knotted_wrack_a_nodosum)^2))
@@ -443,7 +431,7 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
   best_rmse_fuc <- Inf
   for(m in mtry_values){
     for(n in ntree_values){
-      model <- train_rf(formula_fuc, df_lag, mtry = m, ntree = n)
+      model <- randomForest(formula_fuc, df_lag, mtry = m, ntree = n)
       preds <- predict(model, df_lag)
       if(logit_transform) preds <- 100 * plogis(preds)
       rmse_val <- sqrt(mean((preds - df_lag$rockweed_fucus_spp)^2))
@@ -484,10 +472,119 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
 }
 ```
 
+# Flexible Random Forest using training/test split data
+```{r}
+flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = FALSE, unimportant_vars) {
+  
+  # 1. Optional logit transform
+  if(logit_transform) {
+    df <- df %>%
+      mutate(across(all_of(percent_cover_cols), ~ . / 100)) %>%
+      mutate(across(all_of(percent_cover_cols), ~ qlogis(pmin(pmax(., 0.0001), 0.9999))))
+  }
+
+  # 2. Create 1-year lagged predictors
+  df_lag <- df %>%
+    arrange(plot_id, start_date) %>%
+    group_by(plot_id) %>%
+    mutate(across(all_of(percent_cover_cols), ~ dplyr::lag(., n = 1), .names = "lag1_{col}")) %>%
+    ungroup() %>%
+    filter(!is.na(lag1_rockweed_fucus_spp)) %>%
+    select(-unimportant_vars)
+  
+  # 3. Train-Test Split
+    calcSplitRatio <- function(df) {
+  p <- ncol(df) -1 
+  test_N <- (1/sqrt(p))*nrow(df)
+  test_prop <- round((1/sqrt(p))*nrow(df)/nrow(df), 2)
+  train_prop <- 1-test_prop
+  print(paste0("The ideal split ratio is ", train_prop, ":", test_prop, " training:testing"))
+  return(train_prop)
+}
+
+  train_prop<-calcSplitRatio(df = df_lag)
+  indices<-initial_split(df_lag,prop=train_prop)
+  train_subset<-as.integer(rownames(training(indices)))
+  test_subset<-as.integer(rownames(testing(indices)))
+  test_data<-testing(indices)
+
+  # 4. Formulas
+  predictors <- grep("^lag1_", names(df_lag), value = TRUE)
+  formula_asco <- as.formula(paste("knotted_wrack_a_nodosum ~", 
+                                   paste(predictors, collapse = " + ")))
+  formula_fuc <- as.formula(paste("rockweed_fucus_spp ~", 
+                                  paste(predictors, collapse = " + ")))
+  
+  # 5. Tuning ranges
+  mtry_values <- seq(2, floor(length(predictors)/2), by = 2)
+  ntree_values <- seq(100, 1000, by = 100)
+  
+  # 6. Tune Ascophyllum RF
+  best_rmse_asco <- Inf
+  for(m in mtry_values){
+    for(n in ntree_values){
+      model <- randomForest(formula_asco, df_lag, subset = train_subset, mtry = m, ntree = n)
+      preds <- predict(model, test_data)
+      if(logit_transform) preds <- 100 * plogis(preds)
+      rmse_val <- sqrt(mean((preds - test_data$knotted_wrack_a_nodosum)^2))
+      if(rmse_val < best_rmse_asco){
+        best_rmse_asco <- rmse_val
+        rf_asco <- model
+      }
+    }
+  }
+  
+  # 7. Tune Fucus RF
+  best_rmse_fuc <- Inf
+  for(m in mtry_values){
+    for(n in ntree_values){
+      model <- randomForest(formula_fuc, df_lag, subset = train_subset, mtry = m, ntree = n)
+      preds <- predict(model, test_data)
+      if(logit_transform) preds <- 100 * plogis(preds)
+      rmse_val <- sqrt(mean((preds - test_data$rockweed_fucus_spp)^2))
+      if(rmse_val < best_rmse_fuc){
+        best_rmse_fuc <- rmse_val
+        rf_fuc <- model
+      }
+    }
+  }
+  
+  # 8. Predictions
+  pred_asco <- predict(rf_asco, test_data)
+  pred_fuc <- predict(rf_fuc, test_data)
+  if(logit_transform){
+    pred_asco <- 100 * plogis(pred_asco)
+    pred_fuc <- 100 * plogis(pred_fuc)
+  }
+  
+  # 9. Metrics
+  metrics <- data.frame(
+    Species = c("Ascophyllum", "Fucus"),
+    R2 = c(cor(df_lag$knotted_wrack_a_nodosum, pred_asco)^2,
+           cor(df_lag$rockweed_fucus_spp, pred_fuc)^2),
+    MSE = c(mean((df_lag$knotted_wrack_a_nodosum - pred_asco)^2),
+            mean((df_lag$rockweed_fucus_spp - pred_fuc)^2)),
+    RMSE = c(sqrt(mean((df_lag$knotted_wrack_a_nodosum - pred_asco)^2)),
+             sqrt(mean((df_lag$rockweed_fucus_spp - pred_fuc)^2)))
+  )
+  
+  # 10. Best hyperparameters
+  best_params <- data.frame(
+    Species = c("Ascophyllum", "Fucus"),
+    mtry = c(rf_asco$mtry, rf_fuc$mtry),
+    ntree = c(rf_asco$ntree, rf_fuc$ntree)
+  )
+  
+  return(list(Metrics = metrics, Best_Hyperparameters = best_params))
+}
+
+```
+
 # Model Evaluations
 ```{r}
 #Model_results
-logit_results<-flexible_lagged_rf_model(clean_data,logit_transform = TRUE,percent_cover_cols = percent_cover_cols)
-raw_results<-flexible_lagged_rf_model(clean_data,logit_transform = FALSE,percent_cover_cols = percent_cover_cols)
+logit_results_oob<-flexible_lagged_oob_model(df=clean_data,logit_transform = TRUE, percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
+raw_results_oob<-flexible_lagged_oob_model(clean_data,logit_transform = FALSE,percent_cover_cols = percent_cover_cols)
+raw_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = FALSE)
+logit_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = TRUE)
 ```
-

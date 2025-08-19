@@ -1,0 +1,1197 @@
+﻿GroupCode,GroupName,UnitCode,UnitName,SiteCode,SiteName,StartDate,PlotName,SpeciesCode,Count,ScientificName,QAQC,IsPointCUI
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X1,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X1,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X1,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X1,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X1,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X1,HENSAN,1,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X1,STRDRO,191,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X1,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X1,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2019,X1,STRDRO,3,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2019,X1,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2019,X1,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2019,X1,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X1,ASTRUB,3,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X1,STRDRO,12,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X3,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X3,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X3,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X3,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X2,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X2,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X2,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/24/2013,X2,STRDRO,1,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X2,STRDRO,12,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2014,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X2,STRDRO,9,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/29/2024,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/21/2013,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X2,STRDRO,6,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2023,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/11/2019,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X2,STRDRO,18,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/18/2018,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/28/2016,X2,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X2,STRDRO,15,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/25/2017,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2019,X2,STRDRO,23,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2019,X2,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2019,X2,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2019,X2,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X2,STRDRO,5,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,6/12/2015,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,5/22/2022,X2,STRDRO,67,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,BASHAR,Bass Harbor,7/18/2021,X2,STRDRO,33,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/23/2018,X2,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/23/2018,X2,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/23/2018,X2,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/23/2018,X2,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X2,ASTRUB,2,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X2,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X2,STRDRO,6,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X2,HENSAN,1,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/23/2018,X1,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/23/2018,X1,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/23/2018,X1,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/23/2018,X1,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X1,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X1,ASTRUB,10,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X1,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X1,ASTRUB,4,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X3,STRDRO,11,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X3,ASTFOR,2,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2015,X3,ASTRUB,8,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X3,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X3,ASTFOR,2,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/30/2024,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X3,STRDRO,10,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X3,ASTRUB,14,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/29/2016,X3,HENSAN,1,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X3,ASTRUB,14,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/20/2022,X3,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X3,ASTRUB,5,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/20/2014,X3,STRDRO,37,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X3,STRDRO,13,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/22/2013,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X3,ASTFOR,2,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/11/2023,X3,STRDRO,9,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X3,STRDRO,3,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X3,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,5/21/2018,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X3,STRDRO,7,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X3,HENSAN,1,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/26/2017,X3,ASTFOR,4,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,6/10/2019,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X3,ASTRUB,7,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X3,HENSAN,1,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SHIHAR,Ship Harbor,7/16/2021,X3,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X3,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X3,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X3,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X3,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X3,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X3,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X3,STRDRO,6,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X3,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X2,STRDRO,18,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X2,STRDRO,1,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X2,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X2,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X2,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X2,STRDRO,25,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X2,ASTRUB,2,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X2,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X2,STRDRO,7,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X2,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X2,STRDRO,31,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X2,STRDRO,10,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X2,STRDRO,14,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X2,STRDRO,6,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X2,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X1,ASTRUB,2,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/19/2013,X1,STRDRO,30,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X1,ASTRUB,2,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X1,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X1,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/22/2014,X1,STRDRO,24,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2023,X1,STRDRO,3,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/23/2017,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/25/2024,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/13/2019,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/17/2022,X1,STRDRO,22,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X1,STRDRO,4,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/17/2014,X1,ASTRUB,7,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X1,STRDRO,15,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,7/19/2021,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X1,STRDRO,26,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/24/2016,X1,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X1,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,6/8/2015,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X1,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,SCHPOI,Schoodic Point,5/24/2018,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X3,STRDRO,390,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X3,STRDRO,183,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X3,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X3,STRDRO,208,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X3,STRDRO,434,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X3,ASTRUB,2,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X3,ASTRUB,3,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X3,STRDRO,384,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X3,ASTRUB,7,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X3,STRDRO,194,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X3,STRDRO,16,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X3,ASTRUB,3,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X3,STRDRO,199,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X1,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X1,STRDRO,8,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X1,STRDRO,3,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/29/2017,X1,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/29/2017,X1,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/29/2017,X1,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/29/2017,X1,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X2,ASTRUB,8,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2018,X2,STRDRO,6,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X2,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,7/15/2021,X2,ASTRUB,8,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/10/2023,X2,STRDRO,166,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X2,ASTFOR,2,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/28/2017,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X2,ASTRUB,4,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X2,HENSAN,1,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,5/19/2022,X2,STRDRO,119,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X2,ASTRUB,3,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2016,X2,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/27/2024,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/8/2019,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/29/2017,X2,STRDRO,1,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/29/2017,X2,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/29/2017,X2,ASTRUB,1,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITHUN,Little Hunter,6/29/2017,X2,ASTFOR,1,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X2,ASTRUB,13,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X2,STRDRO,9,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X2,STRDRO,13,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X2,ASTRUB,3,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X2,STRDRO,47,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X2,ASTRUB,4,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X2,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X2,STRDRO,6,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X2,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X2,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X2,ASTRUB,4,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X2,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X2,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X2,ASTRUB,3,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X2,ASTRUB,2,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X2,ASTRUB,6,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X2,STRDRO,44,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X1,ASTRUB,2,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X1,STRDRO,11,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X1,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X1,STRDRO,38,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X1,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X1,STRDRO,11,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X1,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X1,STRDRO,6,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X1,ASTFOR,2,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X1,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X1,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X1,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X1,ASTRUB,2,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X1,STRDRO,5,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X1,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X1,ASTRUB,2,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X1,ASTRUB,5,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X1,ASTRUB,2,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X1,STRDRO,14,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X1,STRDRO,38,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X1,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X3,STRDRO,33,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X3,ASTRUB,15,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/19/2014,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X3,STRDRO,31,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X3,ASTFOR,3,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/27/2017,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2023,X3,STRDRO,184,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X3,STRDRO,7,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X3,HENSAN,1,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/10/2015,X3,ASTRUB,4,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X3,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X3,ASTRUB,6,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/20/2018,X3,STRDRO,24,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X3,STRDRO,117,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X3,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/28/2024,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X3,STRDRO,2,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X3,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X3,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/30/2016,X3,ASTRUB,19,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X3,ASTRUB,6,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,7/17/2021,X3,STRDRO,26,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/23/2013,X3,STRDRO,5,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X3,STRDRO,13,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X3,ASTRUB,17,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/26/2016,X3,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X3,ASTRUB,8,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,6/9/2019,X3,STRDRO,52,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X3,ASTRUB,6,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,OTTPOI,Otter Point,5/21/2022,X3,STRDRO,295,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X2,STRDRO,57,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X2,ASTFOR,2,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X2,ASTRUB,5,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X2,STRDRO,46,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X2,STRDRO,4,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X2,ASTRUB,3,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X2,STRDRO,89,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X2,ASTFOR,8,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X2,ASTRUB,21,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X2,STRDRO,29,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X2,STRDRO,5,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X2,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X2,STRDRO,67,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X2,STRDRO,54,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X2,ASTFOR,9,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X2,ASTRUB,14,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X3,STRDRO,365,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X3,ASTFOR,3,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X3,HENSAN,1,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X3,STRDRO,351,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X3,ASTRUB,7,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X3,STRDRO,326,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X3,STRDRO,432,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X3,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X3,ASTRUB,3,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X3,STRDRO,380,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X3,STRDRO,250,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X3,STRDRO,406,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X3,ASTRUB,6,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X3,STRDRO,491,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X1,STRDRO,324,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X1,ASTFOR,5,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/26/2024,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X1,ASTRUB,4,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2018,X1,STRDRO,106,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X1,ASTRUB,14,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/25/2016,X1,STRDRO,175,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X1,STRDRO,207,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X1,HENSAN,2,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,5/18/2022,X1,ASTRUB,5,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X1,STRDRO,198,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X1,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X1,ASTRUB,6,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2019,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X1,STRDRO,258,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X1,HENSAN,1,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,7/14/2021,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X1,STRDRO,322,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X1,ASTFOR,4,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X1,ASTRUB,6,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/7/2023,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X1,STRDRO,543,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X1,ASTFOR,4,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,ACAD,Acadia National Park,LITMOO,Little Moose,6/24/2017,X1,ASTRUB,7,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X2,ASTRUB,14,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2014,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2014,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2014,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2014,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X2,STRDRO,4,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X2,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X2,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X2,HENSAN,1,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X2,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X2,STRDRO,9,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X1,HENSAN,1,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X1,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X1,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X1,ASTRUB,48,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X1,STRDRO,5,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X1,ASTRUB,7,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2014,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2014,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2014,X1,ASTRUB,93,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2014,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X1,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X1,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X1,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X1,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X1,STRDRO,14,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/17/2018,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/15/2022,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/28/2017,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,6/27/2013,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/23/2024,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/26/2016,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/6/2023,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X3,ASTFOR,0,Asterias forbesi,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X3,ASTRUB,0,Asterias rubens,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X3,HENSAN,0,Henricia sanguinolenta,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/10/2015,X3,STRDRO,0,Strongylocentrotus droebachiensis,TRUE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,7/9/2015,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/5/2019,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,GREISL,Green Island,8/12/2021,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X1,ASTRUB,2,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X1,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X1,HENSAN,-999,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X1,STRDRO,4,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X1,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X1,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X1,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X2,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X2,HENSAN,-999,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X2,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/26/2017,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,6/26/2013,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/7/2015,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/23/2008,X3,HENSAN,-999,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/7/2023,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X3,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/28/2016,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/24/2024,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2018,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/13/2021,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/8/2019,X3,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,8/16/2022,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,CALISL,Calf Island,7/16/2014,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X3,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X3,ASTRUB,1,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X3,STRDRO,1,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X3,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X3,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X3,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X3,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X1,ASTFOR,6,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X1,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X1,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X1,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X1,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2014,X2,STRDRO,4,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/31/2022,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/8/2015,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2017,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X2,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X2,ASTFOR,1,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/13/2013,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/14/2021,X2,STRDRO,3,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/9/2019,X2,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/25/2024,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,8/29/2023,X2,STRDRO,0,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X2,STRDRO,2,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/18/2018,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X2,ASTFOR,0,Asterias forbesi,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X2,STRDRO,3,Strongylocentrotus droebachiensis,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X2,ASTRUB,0,Asterias rubens,FALSE,FALSE
+NETN,Northeast Temperate Network,BOHA,Boston Harbor Islands National Park Area,OUTBRE,Outer Brewster,7/27/2016,X2,HENSAN,0,Henricia sanguinolenta,FALSE,FALSE
