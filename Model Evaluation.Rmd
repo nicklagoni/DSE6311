@@ -560,12 +560,12 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
   # 9. Metrics
   metrics <- data.frame(
     Species = c("Ascophyllum", "Fucus"),
-    R2 = c(cor(df_lag$knotted_wrack_a_nodosum, pred_asco)^2,
-           cor(df_lag$rockweed_fucus_spp, pred_fuc)^2),
-    MSE = c(mean((df_lag$knotted_wrack_a_nodosum - pred_asco)^2),
-            mean((df_lag$rockweed_fucus_spp - pred_fuc)^2)),
-    RMSE = c(sqrt(mean((df_lag$knotted_wrack_a_nodosum - pred_asco)^2)),
-             sqrt(mean((df_lag$rockweed_fucus_spp - pred_fuc)^2)))
+    R2 = c(cor(test_data$knotted_wrack_a_nodosum, pred_asco)^2,
+           cor(test_data$rockweed_fucus_spp, pred_fuc)^2),
+    MSE = c(mean((test_data$knotted_wrack_a_nodosum - pred_asco)^2),
+            mean((test_data$rockweed_fucus_spp - pred_fuc)^2)),
+    RMSE = c(sqrt(mean((test_data$knotted_wrack_a_nodosum - pred_asco)^2)),
+             sqrt(mean((test_data$rockweed_fucus_spp - pred_fuc)^2)))
   )
   
   # 10. Best hyperparameters
@@ -584,7 +584,7 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
 ```{r}
 #Model_results
 logit_results_oob<-flexible_lagged_oob_model(df=clean_data,logit_transform = TRUE, percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
-raw_results_oob<-flexible_lagged_oob_model(clean_data,logit_transform = FALSE,percent_cover_cols = percent_cover_cols)
-raw_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = FALSE)
-logit_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = TRUE)
+raw_results_oob<-flexible_lagged_oob_model(clean_data,logit_transform = FALSE,percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
+raw_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = FALSE, unimportant_vars = unimportant_vars)
+logit_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = TRUE, unimportant_vars = unimportant_vars)
 ```
