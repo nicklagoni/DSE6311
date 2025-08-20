@@ -1,0 +1,31 @@
+"0","Sys.setenv(lang='en')"
+"0","set.seed(42)"
+"0","library(readr)"
+"0","library(tidyverse)"
+"0","library(dplyr)"
+"0","library(purrr)"
+"0","library(ggplot2)"
+"0","library(GGally)"
+"0","library(corrplot)"
+"0","library(reshape2)"
+"0","library(patchwork)"
+"0","library(e1071)"
+"0","library(gt)"
+"0","library(magick)"
+"0","library(vegan)"
+"0","library(rsample)"
+"0","library(randomForest)"
+"0","library(janitor)"
+"0","library(caret)"
+"0","library(Metrics)"
+"0","library(xgboost)"
+"2","Warning: package ‘xgboost’ was built under R version 4.4.3"
+"2","
+Attaching package: ‘xgboost’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    slice
+
+"

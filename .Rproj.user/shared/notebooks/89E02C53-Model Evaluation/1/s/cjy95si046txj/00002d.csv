@@ -1,0 +1,21 @@
+"0","summary_table_xgb <- merge(xgb_results$XGB_Metrics, xgb_results$Baseline_Metrics, by = ""Species"", suffixes = c(""_XGB"", ""_Baseline""))
+
+# Compute improvements
+summary_table_xgb <- summary_table_xgb %>%
+  mutate(
+    R2_Delta       = R2_XGB - R2_Baseline,
+    RMSE_Reduction = RMSE_Baseline - RMSE_XGB,
+    Type = ""xgBoost""
+  ) %>%
+  select(Type, Species,
+         R2_XGB, R2_Baseline, R2_Delta,
+         RMSE_XGB, RMSE_Baseline, RMSE_Reduction)
+summary_table_xgb
+"
+"0",""
+"0","names(summary_table_raw)<-c(""Type"",""Species"",""R2"",""R2_Baseline"",""R2_Delta"",""RMSE"",""RMSE_Baseline"",""RMSE_Reduction"")"
+"0","names(summary_table_logit)<-c(""Type"",""Species"",""R2"",""R2_Baseline"",""R2_Delta"",""RMSE"",""RMSE_Baseline"",""RMSE_Reduction"")"
+"0","names(summary_table_xgb)<-c(""Type"",""Species"",""R2"",""R2_Baseline"",""R2_Delta"",""RMSE"",""RMSE_Baseline"",""RMSE_Reduction"")"
+"0",""
+"0","final_summary<-rbind(summary_table_raw,summary_table_logit,summary_table_xgb)"
+"0","final_summary"

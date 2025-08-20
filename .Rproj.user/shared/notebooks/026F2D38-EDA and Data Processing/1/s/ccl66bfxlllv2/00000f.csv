@@ -1,5 +1,0 @@
-"0","hellinger_data<-decostand(numeric_data,method=""hellinger"")"
-"0",""
-"0","pca_result <- prcomp(hellinger_data, scale. = FALSE, center = FALSE)"
-"0","explained_var <- summary(pca_result)$importance[2, ]"
-"0","plot(explained_var,type=""b"",main=""Hellinger-Transformed PCA Results Scree Plot"",ylab=""Proportion of Variance Explained"",xlab=""No. of Principal Components"")"

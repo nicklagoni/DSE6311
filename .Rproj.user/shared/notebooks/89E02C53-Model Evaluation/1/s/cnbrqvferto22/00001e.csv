@@ -1,0 +1,5 @@
+"0","raw_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = FALSE, unimportant_vars = unimportant_vars)
+"
+"2","Error in if (rmse_val < best_rmse_asco) { : 
+  missing value where TRUE/FALSE needed
+"

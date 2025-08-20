@@ -1,3 +1,0 @@
-"0","plot(pred_fuc, logit_data$rockweed_fucus_spp[test_ind],"
-"0","     xlab = ""Predicted (test)"", ylab = ""Actual (test)"","
-"0","     main = ""Predicted vs Actual (Test Data)"")"

@@ -1,6 +1,0 @@
-"0",""
-"0","importance_list_fuc<-fuc_importance_oob%>%"
-"0","  filter(`%IncMSE`<=0)"
-"0","importance_list_asco<-asco_importance_oob%>%"
-"0","  filter(`%IncMSE`<=0)"
-"0","unimportant_vars<-union(rownames(importance_list_asco),rownames(importance_list_fuc))"

@@ -1,6 +1,0 @@
-"0","data_sqrt <- final_data%>%"
-"0","  mutate(across(where(is.numeric), sqrt))"
-"0",""
-"0",""
-"0","par(mfrow = c(1,2))"
-"0","hist(data_sqrt$`Rockweed (Fucus) spp.`, main = ""Fucus spp. Cover"", xlab = ""Percent Cover"")"

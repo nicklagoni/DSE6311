@@ -1,0 +1,578 @@
+---
+title: "DSE6311 - Exploratory Data Analysis"
+author: "Nick Lagoni"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+#Setup
+```{r}
+Sys.setenv(lang='en')
+set.seed(42)
+library(readr)
+library(tidyverse)
+library(dplyr)
+library(purrr)
+library(ggplot2)
+library(GGally)
+library(corrplot)
+library(reshape2)
+library(patchwork)
+library(e1071)
+library(gt)
+library(magick)
+library(vegan)
+library(rsample)
+library(randomForest)
+library(janitor)
+```
+
+
+# Data Input
+```{r}
+transects<-read.csv("transects.csv")
+echinoderm_counts<-read.csv("echinoderm_counts.csv")
+echinoderm_measurements<-read.csv("echinoderm_measurements.csv")
+motileInvert_counts<-read.csv("motileInvert_counts.csv")
+motileInvert_measurements<-read.csv("motileInvert_measurements.csv")
+photoquadrats<-read.csv("photoquadrats.csv")
+
+```
+
+# Data Preprocessing
+
+### Tidying the Data
+```{r}
+#Photoplots Pivot
+photoquadrats_pivot<-photoquadrats%>%
+  select(Site_Name,Loc_Name,Target_Species,Plot_Name,Start_Date,Spp_Name,Perc_Cover)%>%
+  pivot_wider(
+    names_from = Spp_Name,
+    values_from = Perc_Cover,
+    values_fn = mean
+  )
+#Motile Invert Counts Pivot
+motileInvert_counts$Count<-motileInvert_counts$Damage+motileInvert_counts$No.Damage
+motileInvert_counts_pivot<-motileInvert_counts%>%
+  select(Site_Name,Loc_Name,Target_Species,Plot_Name,Start_Date,Spp_Name,Count)%>%
+  pivot_wider(
+    names_from = Spp_Name,
+    values_from = Count,
+    values_fill = 0
+  )
+motileInvert_counts_pivot<-motileInvert_counts_pivot%>%
+  mutate(across(where(is.numeric), ~ ifelse(. < 0, 0, .)))
+
+#Motile Invert Measurements Pivot
+
+motileInvert_measurements_pivot<-motileInvert_measurements%>%
+  select(Site_Name,Loc_Name,Target_Species,Plot_Name,Start_Date,Spp_Name,Measurement)%>%
+  pivot_wider(
+    names_from = Spp_Name,
+    values_from = Measurement,
+    values_fn = mean,
+    values_fill = 0
+  )
+names(motileInvert_measurements_pivot)[(ncol(motileInvert_measurements_pivot)-5):ncol(motileInvert_measurements_pivot)] <- paste0(names(motileInvert_measurements_pivot)[(ncol(motileInvert_measurements_pivot)-5):ncol(motileInvert_measurements_pivot)], " Mean Measure")
+```
+
+### Joining the Data
+```{r}
+join_cols<-c("Site_Name","Loc_Name","Target_Species","Plot_Name","Start_Date")
+final_data<-photoquadrats_pivot%>%
+  left_join(motileInvert_counts_pivot,by=join_cols)%>%
+  left_join(motileInvert_measurements_pivot,by=join_cols)%>%
+  mutate(across(everything(), ~replace_na(., 0)))
+final_data<-final_data%>%
+  filter(Site_Name=="Acadia NP")%>%
+  select(-Target_Species,-Plot_Name,-Site_Name)
+```
+
+
+#Exploratory Data Analysis
+
+### Collinearity
+```{r}
+corr_matrix <- cor(final_data[sapply(final_data, is.numeric)], use = "complete.obs")
+melted_corr <- melt(corr_matrix)
+
+filtered_corr <- melted_corr %>%
+  filter(Var1 != Var2, abs(value) > 0.5)
+
+ggplot(filtered_corr, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient2(limit = c(-1, 1), midpoint = 0) +
+  theme_minimal(base_size = 10) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(
+    title = "Correlation Heatmap within NETN Rocky Intertidal Photoplots",
+    x = "Variable 1",
+    y = "Variable 2",
+    fill = "Correlation Strength"
+  )
+```
+
+### Target Variable Distribution
+```{r}
+par(mfrow = c(1, 2))
+hist(final_data$`Rockweed (Fucus) spp.`, main = "Fucus spp. Cover", xlab = "Percent Cover")
+hist(final_data$`Knotted Wrack (A. nodosum)`, main = "Ascophyllum nodosum Cover", xlab = "Percent Cover")
+```
+
+### Relationship Between Motile Invert Abundances and Fucus Percent Cover
+
+```{r}
+species_list <- c(
+  "`Common periwinkle (Littorina littorea)`" = "Littorina littorea",
+  "`Smooth periwinkle (Littorina obtusata)`" = "Littorina obtusata",
+  "`Rough periwinkle (Littorina saxatilis)`" = "Littorina saxatilis",
+  "`Green crab (Carcinus maenas)`" = "Carcinus maenas",
+  "`Limpet (Tectura testudinalis)`" = "Tectura testudinalis"
+)
+plots <- lapply(names(species_list), function(sp) {
+  ggplot(final_data, aes_string(x = sp, y = "`Rockweed (Fucus) spp.`")) +
+    geom_point() +
+    geom_smooth(method = "lm") +
+    labs(
+      title = paste(species_list[sp], "vs Fucus spp.")
+    ) +
+    theme_minimal(base_size = 9) +
+    theme(
+      plot.title = element_text(size = 9),
+      axis.title = element_text(size = 8),
+      axis.text = element_text(size = 7)
+    )
+})
+wrap_plots(plots, ncol = 3) +
+  plot_annotation(
+    title = "Relationship between Motile Invertebrate Counts and Fucus Percent Cover",
+    theme = theme(
+      plot.title = element_text(size = 12, face = "bold", hjust = 0.5)
+    )
+  )
+```
+
+### Relationship Between Motile Invert Abundances and Ascophyllum Percent Cover
+```{r}
+species_list <- c(
+  "`Common periwinkle (Littorina littorea)`" = "Littorina littorea",
+  "`Smooth periwinkle (Littorina obtusata)`" = "Littorina obtusata",
+  "`Rough periwinkle (Littorina saxatilis)`" = "Littorina saxatilis",
+  "`Green crab (Carcinus maenas)`" = "Carcinus maenas",
+  "`Limpet (Tectura testudinalis)`" = "Tectura testudinalis"
+)
+plots <- lapply(names(species_list), function(sp) {
+  ggplot(final_data, aes_string(x = sp, y = "`Knotted Wrack (A. nodosum)`")) +
+    geom_point() +
+    geom_smooth(method = "lm") +
+    labs(
+      title = paste(species_list[sp], "vs A. nodosum")
+    ) +
+    theme_minimal(base_size = 9) +
+    theme(
+      plot.title = element_text(size = 9),
+      axis.title = element_text(size = 8),
+      axis.text = element_text(size = 7)
+    )
+})
+wrap_plots(plots, ncol = 3) +
+  plot_annotation(
+    title = "Relationship between Motile Invertebrate Counts and Ascophyllum nodosum Percent Cover",
+    theme = theme(
+      plot.title = element_text(size = 12, face = "bold", hjust = 0.5)
+    )
+  )
+```
+
+### Continuous Variable Summary Table
+```{r}
+
+numeric_data <- final_data %>%
+  select(where(is.numeric))
+
+cont_summary <- numeric_data %>%
+  summarise(across(
+    everything(),
+    list(
+      Mean = ~round(mean(., na.rm = TRUE), 2),
+      Median = ~round(median(., na.rm = TRUE), 2),
+      SD = ~round(sd(., na.rm = TRUE), 2),
+      Min = ~round(min(., na.rm = TRUE), 2),
+      Max = ~round(max(., na.rm = TRUE), 2),
+      Skew = ~round(skewness(., na.rm = TRUE), 2),
+      Kurtosis = ~round(kurtosis(., na.rm = TRUE), 2)
+    ),
+    .names = "{.col}_{.fn}"
+  )) %>%
+  tidyr::pivot_longer(everything(), names_to = c("Variable", ".value"), names_sep = "_")
+
+print(cont_summary)
+
+
+cont_summary %>%
+  gt() %>%
+  gtsave("table_gt.png")
+img <- image_read("table_gt.png")
+img_rotated <- image_rotate(img, 90)
+image_write(img_rotated, "rotated_table_gt.png")
+```
+### Principal Component Analysis
+```{r}
+pca_data <- final_data %>% select(where(is.numeric))
+pca_data <- pca_data[, apply(pca_data, 2, var) != 0]
+pca_data <- na.omit(pca_data)
+pca_result <- prcomp(pca_data, scale. = TRUE, center = TRUE)
+explained_var <- summary(pca_result)$importance[2, ]
+plot(explained_var,type="b",main="PCA Results Scree Plot",ylab="Proportion of Variance Explained",xlab="Principal Component")
+#as.data.frame(explained_var)
+```
+
+# Data Postprocessing
+
+### Square Root Transformation
+```{r}
+data_sqrt <- final_data%>%
+  mutate(across(where(is.numeric), sqrt))
+
+
+par(mfrow = c(1,2))
+hist(data_sqrt$`Rockweed (Fucus) spp.`, main = "Fucus spp. Cover", xlab = "Percent Cover")
+hist(data_sqrt$`Knotted Wrack (A. nodosum)`, main = "Ascophyllum nodosum Cover", xlab = "Percent Cover")
+```
+>Sqrt() transformation does little to nothing to mitigate the zero inflated distribution of the data.
+
+### Log(x+1) Transformation
+```{r}
+data_sqrt<-final_data%>%
+  mutate(across(where(is.numeric),~log(.+1)))
+
+
+par(mfrow=c(1,2))
+hist(data_sqrt$`Rockweed (Fucus) spp.`, main = "Fucus spp. Cover", xlab = "Percent Cover")
+hist(data_sqrt$`Knotted Wrack (A. nodosum)`, main = "Ascophyllum nodosum Cover", xlab = "Percent Cover")
+```
+
+> Log(x+1) transformation does a slightly better job at addressing zero inflation than the Sqrt() transformation, though it does not approach normality at all.
+
+### Presence - Absence Transformation
+```{r}
+data_pa<-final_data%>%
+  mutate(across(where(is.numeric),~ifelse(.>0,1,0)))
+
+par(mfrow=c(1,2))
+hist(data_pa$`Rockweed (Fucus) spp.`, main = "Fucus spp. Cover", xlab = "Percent Cover")
+hist(data_pa$`Knotted Wrack (A. nodosum)`, main = "Ascophyllum nodosum Cover", xlab = "Percent Cover")
+```
+
+> Transforming the data to presence/absence form data does improve distribution slightly but I believe the cost to the value of the data is too great to justify this course of action, and presence/absence data does not sufficiently address the research question.
+
+### NMDS
+```{r}
+nmds<-metaMDS(numeric_data, distance = "bray", k = 2)
+plot(nmds)
+stressplot(nmds)
+```
+### Hellinger-Transformed PCA
+
+```{r}
+hellinger_data<-decostand(numeric_data,method="hellinger")
+
+pca_result <- prcomp(hellinger_data, scale. = FALSE, center = FALSE)
+explained_var <- summary(pca_result)$importance[2, ]
+plot(explained_var,type="b",main="Hellinger-Transformed PCA Results Scree Plot",ylab="Proportion of Variance Explained",xlab="No. of Principal Components")
+as.data.frame(explained_var)
+```
+
+> Even with the Hellinger transformation, PCA continues to be a suboptimal way of reducing dimensionality in the data.
+
+### Training Testing Split
+```{r}
+#Using sqrt(p):1 ratio as described in Joseph, 2022. Code adapted from Katherine Geist's Data Science for Biological Sciences course
+calcSplitRatio <- function(p = NA, df) {
+  if(is.na(p)) {
+    p <- ncol(df) -1 
+  }
+  test_N <- (1/sqrt(p))*nrow(df)
+  test_prop <- round((1/sqrt(p))*nrow(df)/nrow(df), 2)
+  train_prop <- 1-test_prop
+  print(paste0("The ideal split ratio is ", train_prop, ":", test_prop, " training:testing"))
+  return(train_prop)
+}
+
+train_prop<-calcSplitRatio(df = final_data)
+
+indices<-initial_split(final_data,prop=train_prop)
+train_data<-training(indices)
+test_data<-testing(indices)
+```
+
+### Out-of-Bag Random Forest
+```{r}
+clean_data<-final_data%>%
+  clean_names()
+#clean_data<-clean_data[,-c(1:5)]
+zero_data<-clean_data%>%
+  select(where(is.numeric))%>%
+  select(where(~sum(.)==0))
+zero_list<-colnames(zero_data)
+clean_data<-clean_data%>%
+  select(-zero_list)
+oob_asco<-randomForest(knotted_wrack_a_nodosum~.,data=clean_data,ntree=500,importance=TRUE)
+oob_fuc<-randomForest(rockweed_fucus_spp~.,data=clean_data,ntree=500,importance=TRUE)
+
+
+print(oob_asco)
+print(oob_fuc)
+```
+> An OOB random forest is used to get a pulse of model performance without data transformation, since the transformations up until now have not been very helpful. This also does not compromise the validity of the test set, as this uses only the training set, preventing data leakage. Since percent cover data is on a 0 - 100 scale, residual MSE of 46.64 for Ascophyllum and 70.67 for Fucus suggests very poor model performance in predicting, though the model also explains 95%+ of the variance in each model, suggesting that it is fitting well to the training data.
+
+### Out-of-Bag Random Forest using Logit Transformation
+```{r}
+percent_cover_cols<-colnames(clean_data[,c(6:29)])
+clean_data_percent<-clean_data%>%
+  mutate(across(percent_cover_cols,~./100)) #converting to a 0 - 1 scale for logit transformation
+logit_data<-clean_data_percent%>%
+  mutate(across(percent_cover_cols,~qlogis(pmin(pmax(.,0.0001),1-0.0001)))) 
+
+logit_skew_fuc<-skewness(logit_data$rockweed_fucus_spp)
+logit_skew_asco<-skewness(logit_data$knotted_wrack_a_nodosum)
+skew_fuc<-skewness(clean_data$rockweed_fucus_spp)
+skew_asco<-skewness(clean_data$knotted_wrack_a_nodosum)
+
+#Remove unimportant terms
+
+#have to limit the range from 0.0001 to 0.9999 otherwise it gives me NaNs and -Inf values.
+oob_asco<-randomForest(knotted_wrack_a_nodosum~.,data=logit_data,ntree=500,importance=TRUE)
+oob_fuc<-randomForest(rockweed_fucus_spp~.,data=logit_data,ntree=500,importance=TRUE)
+
+
+print(oob_asco)
+print(oob_fuc)
+
+plot(oob_asco$predicted,logit_data$knotted_wrack_a_nodosum,
+     xlab = "OOB Predicted", ylab = "Actual",
+     main = "OOB Predicted vs Actual")
+  abline(0, 1)
+```
+
+> Trying out Logit transformation as the bounded percent cover values tightly clustered around 0 might be causing issues, even though the non-parametric nature of Random Forest doesn't require unbounded data.
+
+```{r}
+# Get predictions from  random forest model
+pred_asc<-predict(oob_asco, newdata = logit_data)
+pred_fuc<-predict(oob_fuc, newdata = logit_data)
+
+# Actual values on logit scale
+actual_asc<-logit_data$knotted_wrack_a_nodosum
+actual_fuc<-logit_data$rockweed_fucus_spp
+
+# Back-transform to proportion scale
+actual_asc_prop<-plogis(actual_asc)
+pred_asc_prop<-plogis(pred_asc)
+
+actual_fuc_prop<-plogis(actual_fuc)
+pred_fuc_prop<-plogis(pred_fuc)
+
+# Calculate proportion errors (absolute)
+asc_error_prop<-abs(pred_asc_prop - actual_asc_prop)
+fuc_error_prop<-abs(pred_fuc_prop - actual_fuc_prop)
+
+# Make a tidy dataframe for plotting
+df_plot<-bind_rows(
+  data.frame(
+    species = "Ascophyllum",
+    actual_cover = actual_asc_prop,
+    error_cover = asc_error_prop
+  ),
+  data.frame(
+    species = "Fucus",
+    actual_cover = actual_fuc_prop,
+    error_cover = fuc_error_prop
+  )
+)
+
+# Plot error vs. actual cover
+ggplot(df_plot, aes(x = actual_cover * 100, y = error_cover * 100, color = species)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(se = FALSE) +
+  labs(
+    x = "Actual % Cover",
+    y = "Absolute Error (% cover)",
+    title = "Prediction Error vs. Actual Cover",
+    subtitle = "Back-transformed from logit space"
+  ) +
+  theme_minimal()
+
+```
+
+
+### Random Forest using Logit Transformation
+```{r}
+train_ind<-as.integer(rownames(training(indices)))
+test_ind<-as.integer(rownames(testing(indices)))
+rf_asco<-randomForest(knotted_wrack_a_nodosum~.,data=logit_data,ntree=500,importance=TRUE,subset=train_ind)
+rf_fuc<-randomForest(rockweed_fucus_spp~.,data=logit_data,ntree=500,importance=TRUE,subset=train_ind)
+
+
+print(rf_asco)
+print(rf_fuc)
+
+pred_asc<-predict(rf_asco, newdata = logit_data[test_ind, ])
+pred_fuc<-predict(rf_fuc, newdata = logit_data[test_ind, ])
+plot(pred_asc, logit_data$knotted_wrack_a_nodosum[test_ind],
+     xlab = "Predicted (test)", ylab = "Actual (test)",
+     main = "Predicted vs Actual (Test Data)")
+abline(0, 1)
+plot(pred_fuc, logit_data$rockweed_fucus_spp[test_ind],
+     xlab = "Predicted (test)", ylab = "Actual (test)",
+     main = "Predicted vs Actual (Test Data)")
+abline(0, 1)
+```
+
+
+```{r}
+# Actual values on logit scale
+actual_asc<-logit_data[test_ind, ]$knotted_wrack_a_nodosum
+actual_fuc<-logit_data[test_ind, ]$rockweed_fucus_spp
+
+# Back-transform to proportion scale
+actual_asc_prop<-plogis(actual_asc)
+pred_asc_prop<-plogis(pred_asc)
+
+actual_fuc_prop<-plogis(actual_fuc)
+pred_fuc_prop<-plogis(pred_fuc)
+
+# Calculate proportion errors (absolute)
+asc_error_prop<-abs(pred_asc_prop - actual_asc_prop)
+fuc_error_prop<-abs(pred_fuc_prop - actual_fuc_prop)
+
+# Make a tidy dataframe for plotting
+df_plot<-bind_rows(
+  data.frame(
+    species = "Ascophyllum",
+    actual_cover = actual_asc_prop,
+    error_cover = asc_error_prop
+  ),
+  data.frame(
+    species = "Fucus",
+    actual_cover = actual_fuc_prop,
+    error_cover = fuc_error_prop
+  )
+)
+
+# Plot error vs. actual cover
+ggplot(df_plot, aes(x = actual_cover * 100, y = error_cover * 100, color = species)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(se = FALSE) +
+  labs(
+    x = "Actual % Cover",
+    y = "Absolute Error (% cover)",
+    title = "Prediction Error vs. Actual Cover",
+    subtitle = "Back-transformed from logit space"
+  ) +
+  theme_minimal()
+```
+
+Importance Metrics from Initial Random Forest
+```{r}
+asco_importance_oob<-as.data.frame(importance(oob_asco))
+asco_importance_oob<-asco_importance_oob%>%
+  arrange(desc(`%IncMSE`))
+head(asco_importance_oob)
+
+asco_importance_rf<-as.data.frame(importance(rf_asco))
+asco_importance_rf<-asco_importance_rf%>%
+  arrange(desc(`%IncMSE`))
+head(asco_importance_rf)
+
+fuc_importance_oob<-as.data.frame(importance(oob_fuc))
+fuc_importance_oob<-fuc_importance_oob%>%
+  arrange(desc(`%IncMSE`))
+head(fuc_importance_oob)
+
+fuc_importance_rf<-as.data.frame(importance(rf_fuc))
+fuc_importance_rf<-fuc_importance_rf%>%
+  arrange(desc(`%IncMSE`))
+head(fuc_importance_rf)
+
+importance_list_fuc<-fuc_importance_oob%>%
+  filter(`%IncMSE`<=0)
+importance_list_asco<-asco_importance_oob%>%
+  filter(`%IncMSE`<=0)
+unimportant_vars<-union(rownames(importance_list_asco),rownames(importance_list_fuc))
+```
+
+Feature Selection based on Importance metrics
+```{r}
+#Found that site_name and plot_name were contributing significantly, dropped site as it is Acadia/BOHA and I am not interested in BOHA right now. Dropped plot name as it is just A1/A2/A3/etc. There is no actual similarity between A2 plots between sites aside from the fact that they are in the asco target species. Dropped target species as well because obviously target species would predict the community breakdown of those plots--they were chosen explicitly because of that.
+
+logit_data<-logit_data%>%
+  select(-unimportant_vars)
+
+oob_asco<-randomForest(knotted_wrack_a_nodosum~.,data=logit_data,ntree=500,importance=TRUE)
+oob_fuc<-randomForest(rockweed_fucus_spp~.,data=logit_data,ntree=500,importance=TRUE)
+
+
+print(oob_asco)
+print(oob_fuc)
+
+plot(oob_asco$predicted,logit_data$knotted_wrack_a_nodosum,
+     xlab = "OOB Predicted", ylab = "Actual",
+     main = "OOB Predicted vs Actual")
+  abline(0, 1)
+
+
+# Get predictions from  random forest model
+pred_asc<-predict(oob_asco, newdata = logit_data)
+pred_fuc<-predict(oob_fuc, newdata = logit_data)
+
+# Actual values on logit scale
+actual_asc<-logit_data$knotted_wrack_a_nodosum
+actual_fuc<-logit_data$rockweed_fucus_spp
+
+# Back-transform to proportion scale
+actual_asc_prop<-plogis(actual_asc)
+pred_asc_prop<-plogis(pred_asc)
+
+actual_fuc_prop<-plogis(actual_fuc)
+pred_fuc_prop<-plogis(pred_fuc)
+
+# Calculate proportion errors (absolute)
+asc_error_prop<-abs(pred_asc_prop - actual_asc_prop)
+fuc_error_prop<-abs(pred_fuc_prop - actual_fuc_prop)
+
+# Make a tidy dataframe for plotting
+df_plot<-bind_rows(
+  data.frame(
+    species = "Ascophyllum",
+    actual_cover = actual_asc_prop,
+    error_cover = asc_error_prop
+  ),
+  data.frame(
+    species = "Fucus",
+    actual_cover = actual_fuc_prop,
+    error_cover = fuc_error_prop
+  )
+)
+
+# Plot error vs. actual cover
+ggplot(df_plot, aes(x = actual_cover * 100, y = error_cover * 100, color = species)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(se = FALSE) +
+  labs(
+    x = "Actual % Cover",
+    y = "Absolute Error (% cover)",
+    title = "OOB Random Forest Prediction Error vs. Actual Percent Cover",
+    subtitle = "Back-transformed from logit space"
+  ) +
+  theme_minimal()
+
+```
+
+
+
+Explore Temporally Lagged Model
+```{r}
+
+```
+

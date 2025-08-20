@@ -1,5 +1,0 @@
-"0",""
-"0","asco_importance_rf<-as.data.frame(importance(rf_asco))"
-"0","asco_importance_rf<-asco_importance_rf%>%"
-"0","  arrange(desc(`%IncMSE`))"
-"0","head(asco_importance_rf)"
