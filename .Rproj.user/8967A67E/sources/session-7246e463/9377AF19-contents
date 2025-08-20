@@ -411,8 +411,8 @@ flexible_lagged_oob_model <- function(df, percent_cover_cols, logit_transform = 
   formula_fuc <- as.formula(paste("rockweed_fucus_spp ~", paste(predictors, collapse = " + ")))
   
   # 4. Default tuning ranges
-  mtry_values <- seq(2, floor(length(predictors)/2), by = 2)
-  ntree_values <- seq(200, 1000, by = 100)
+  mtry_values <- seq(2, length(predictors), by = 1)
+  ntree_values <- seq(1, 1000, by = 50)
   
   # 5. Tune Ascophyllum RF
   best_rmse_asco <- Inf
@@ -505,7 +505,7 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
                                   paste(predictors, collapse = " + ")))
   
   # 5. Tuning ranges
-  mtry_values <- seq(2, floor(length(predictors)/2), by = 2)
+  mtry_values <- seq(2, length(predictors), by = 1)
   ntree_values <- seq(1, 1000, by = 50)
   
   # 6. Tune Ascophyllum RF
@@ -588,8 +588,8 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
 # Model Evaluations
 ```{r}
 #Model_results
-logit_results_oob<-flexible_lagged_oob_model(df=clean_data,logit_transform = TRUE, percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
-raw_results_oob<-flexible_lagged_oob_model(clean_data,logit_transform = FALSE,percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
+#logit_results_oob<-flexible_lagged_oob_model(df=clean_data,logit_transform = TRUE, percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
+#raw_results_oob<-flexible_lagged_oob_model(clean_data,logit_transform = FALSE,percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
 raw_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = FALSE, unimportant_vars = unimportant_vars)
 logit_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = TRUE, unimportant_vars = unimportant_vars)
 ```
@@ -877,7 +877,10 @@ final_summary_gt <- final_summary %>%
   cols_hide(columns = "Type")
 
 final_summary_gt%>%
-  gtsave("rf_xgboost_comparison_table.png")
+  gtsave("rf_xgboost_comparison_table_2.png")
 ```
+# Importance Values
+```{r}
 
+```
 
