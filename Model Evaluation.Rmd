@@ -576,6 +576,16 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
   RMSE = c(sqrt(mean((test_data$knotted_wrack_a_nodosum - baseline_asco)^2)),
            sqrt(mean((test_data$rockweed_fucus_spp - baseline_fuc)^2)))
 )
+  if(logit_transform){
+  baseline_metrics <- data.frame(
+  Species = c("Ascophyllum", "Fucus"),
+  R2  = c(cor(test_data$knotted_wrack_a_nodosum, baseline_asco)^2,
+          cor(test_data$rockweed_fucus_spp, baseline_fuc)^2),
+  MSE = c(mean((100*plogis(test_data$knotted_wrack_a_nodosum) - baseline_asco)^2),
+          mean((100*plogis(test_data$rockweed_fucus_spp) - baseline_fuc)^2)),
+  RMSE = c(sqrt(mean((100*plogis(test_data$knotted_wrack_a_nodosum) - baseline_asco)^2)),
+           sqrt(mean((100*plogis(test_data$rockweed_fucus_spp) - baseline_fuc)^2)))
+)}
   # 12. Return baseline and modeling metrics
   return(list(
   RF_Metrics = metrics,
@@ -588,8 +598,8 @@ flexible_lagged_rf_model <- function(df, percent_cover_cols, logit_transform = F
 # Model Evaluations
 ```{r}
 #Model_results
-logit_results_oob<-flexible_lagged_oob_model(df=clean_data,logit_transform = TRUE, percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
-raw_results_oob<-flexible_lagged_oob_model(clean_data,logit_transform = FALSE,percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
+#logit_results_oob<-flexible_lagged_oob_model(df=clean_data,logit_transform = TRUE, percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
+#raw_results_oob<-flexible_lagged_oob_model(clean_data,logit_transform = FALSE,percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)
 raw_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = FALSE, unimportant_vars = unimportant_vars)
 logit_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = TRUE, unimportant_vars = unimportant_vars)
 ```

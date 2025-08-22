@@ -1,0 +1,12 @@
+---
+title: Predicting Abundance of Key Algal Species Percent Cover in The Rocky Intertidal of Acadia
+  National Park
+author: "Nick Lagoni"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+
+```
+
