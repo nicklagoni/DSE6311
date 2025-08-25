@@ -1,0 +1,1 @@
+"0","hist(clean_data$knotted_wrack_a_nodosum, main = ""Ascophyllum nodosum Cover"", xlab = ""Percent Cover"")"

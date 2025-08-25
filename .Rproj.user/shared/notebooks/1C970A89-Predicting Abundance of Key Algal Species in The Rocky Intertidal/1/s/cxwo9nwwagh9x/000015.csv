@@ -1,0 +1,7 @@
+"0",""
+"0","names(summary_table_raw)<-c(""Type"",""Species"",""R2"",""R2_Baseline"",""R2_Delta"",""RMSE"",""RMSE_Baseline"",""RMSE_Reduction"")"
+"0","names(summary_table_logit)<-c(""Type"",""Species"",""R2"",""R2_Baseline"",""R2_Delta"",""RMSE"",""RMSE_Baseline"",""RMSE_Reduction"")"
+"0","names(summary_table_xgb)<-c(""Type"",""Species"",""R2"",""R2_Baseline"",""R2_Delta"",""RMSE"",""RMSE_Baseline"",""RMSE_Reduction"")"
+"0",""
+"0","final_summary<-rbind(summary_table_raw,summary_table_logit,summary_table_xgb)"
+"0","final_summary"

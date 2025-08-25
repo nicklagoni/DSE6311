@@ -1,0 +1,14 @@
+"0","#Model_results"
+"0","#logit_results_oob<-flexible_lagged_oob_model(df=clean_data,logit_transform = TRUE, percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)"
+"0","#raw_results_oob<-flexible_lagged_oob_model(clean_data,logit_transform = FALSE,percent_cover_cols = percent_cover_cols, unimportant_vars = unimportant_vars)"
+"0","raw_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = FALSE, unimportant_vars = unimportant_vars)"
+"2","Warning: Using an external vector in selections was deprecated in tidyselect 1.1.0.
+Please use `all_of()` or `any_of()` instead.
+# Was:
+data %>% select(unimportant_vars)
+
+# Now:
+data %>% select(all_of(unimportant_vars))
+
+See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>."
+"0","logit_results<-flexible_lagged_rf_model(clean_data,percent_cover_cols = percent_cover_cols,logit_transform = TRUE, unimportant_vars = unimportant_vars)"

@@ -1,0 +1,2 @@
+"0","par(mfrow = c(1, 2))"
+"0","hist(clean_data$rockweed_fucus_spp, main = ""Fucus vesiculosus Cover"", xlab = ""Percent Cover"")"
